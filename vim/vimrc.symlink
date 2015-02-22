@@ -108,7 +108,10 @@ set complete=.,w,b,t                   " Completion location priority.
 " ==============================================================================
 " Folding
 " ==============================================================================
-
+set foldenable                         " Enable folding.
+set foldlevelstart=2                   " Fold level when opening buffer.
+set foldnestmax=4                      " Max nested fold level.
+set foldmethod=indent                  " Fold on indent level.
 
 
 " =============================================================================
