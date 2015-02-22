@@ -103,6 +103,7 @@ set complete=.,w,b,t                   " Completion location priority.
 " ==============================================================================
 " Syntax
 " ==============================================================================
+" Drupal filetypes and syntax.
 augroup module
   autocmd BufRead,BufNewFile *.module set filetype=php
   autocmd BufRead,BufNewFile *.install set filetype=php
@@ -111,6 +112,8 @@ augroup module
   autocmd BufRead,BufNewFile *.profile set filetype=php
   autocmd BufRead,BufNewFile *.view set filetype=php
 augroup END
+autocmd BufRead,BufNewFile *.twig set syntax=html
+
 
 " ==============================================================================
 " Folding
