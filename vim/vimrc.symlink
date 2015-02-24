@@ -12,15 +12,11 @@
 " ==============================================================================
 set nocompatible
 filetype off
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim      " Runtime path include Vundle.
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+"call vundle#begin('~/some/path/here') " Alternate plugin path.
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+Plugin 'gmarik/Vundle.vim'             " Required Vundle managment.
 "
 " Plugins
 "
@@ -30,8 +26,7 @@ Plugin 'Bling/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'scrooloose/syntastic'
 
-" All of your Plugins must be added before the following line
-call vundle#end()
+call vundle#end()                      " End of plugin management list.
 filetype plugin indent on
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
