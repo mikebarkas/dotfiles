@@ -106,6 +106,8 @@ augroup module
   autocmd BufRead,BufNewFile *.inc set filetype=php
   autocmd BufRead,BufNewFile *.profile set filetype=php
   autocmd BufRead,BufNewFile *.view set filetype=php
+  autocmd BufRead,BufNewFile *.info set filetype=ini
+  autocmd BufRead,BufNewFile *.make set filetype=ini
 augroup END
 autocmd BufRead,BufNewFile *.twig set syntax=html
 
