@@ -44,7 +44,7 @@ bind l select-pane -R
 # Status bar
 # ==============================================================================
 # Custom status bar config file.
-# source-file ~/statusbar/status_line.conf
+# source-file ~/.dotfiles/tmux/statusbar/status_line.conf
 
 set -g status-utf8 on
 
