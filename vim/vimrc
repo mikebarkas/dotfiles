@@ -161,6 +161,8 @@ set statusline+=Line:%l-%L\ Buf:#%n
 " ==============================================================================
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#whitespace#enabled = 1
+let g:airline#extensions#whitespace#symbol = '!'
 
 
 " ==============================================================================
