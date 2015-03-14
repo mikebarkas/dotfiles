@@ -26,6 +26,8 @@ Plugin 'Bling/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'scrooloose/syntastic'
 
+Plugin 'git://drupalcode.org/project/vimrc.git', {'rtp': 'bundle/vim-plugin-for-drupal/'}
+
 call vundle#end()                      " End of plugin management list.
 filetype plugin indent on
 " To ignore plugin indent changes, instead use:
