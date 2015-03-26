@@ -1,4 +1,9 @@
 #
+# Alias
+#
+# alias vim='/usr/local/Cellar/vim/7.4.488/bin/vim'
+
+#
 # Mac
 #
 
