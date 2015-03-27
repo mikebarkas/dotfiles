@@ -1,0 +1,17 @@
+# -------------------------------------
+# Global Git Ignore
+# -------------------------------------
+# Mac OS
+.DS_Store
+.DS_Store?
+
+# Drupal
+sites/*/settings*.php
+sites/*/services*.yml
+sites/*/files
+sites/*/private
+*/sites/*/settings*.php
+*/sites/*/files/
+*/sites/*/private/
+drupalforfirebug
+FirePHPCore
