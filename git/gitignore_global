@@ -1,17 +1,45 @@
 # -------------------------------------
 # Global Git Ignore
 # -------------------------------------
+
+
+# -------------------------------------
+# Operating Systems.
+# -------------------------------------
 # Mac OS
 .DS_Store
 .DS_Store?
+*.swp
+# Winddohs
 
-# Drupal
+
+
+# -------------------------------------
+# Drupal.
+# -------------------------------------
+# Files containing sensitive data.
 sites/*/settings*.php
 sites/*/services*.yml
+*/sites/*/settings*.php
+
+# Files containing generated content.
+files/
 sites/*/files
 sites/*/private
-*/sites/*/settings*.php
 */sites/*/files/
 */sites/*/private/
 drupalforfirebug
 FirePHPCore
+
+# Default text files.
+robots.txt
+/CHANGELOG.txt
+/COPYRIGHT.txt
+/INSTALL*.txt
+/LICENSE.txt
+/MAINTAINERS.txt
+/UPGRADE.txt
+/README.txt
+sites/all/README.txt
+sites/all/modules/README.txt
+sites/all/themes/README.txt
