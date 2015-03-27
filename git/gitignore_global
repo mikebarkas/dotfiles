@@ -8,11 +8,25 @@
 # -------------------------------------
 # Operating Systems.
 # -------------------------------------
+#
 # Mac OS
+#
 .DS_Store
 .DS_Store?
 *.swp
+
+#
+# Linux
+#
+# KDE directory preferences
+.directory
+
+# Trash might appear on any partition
+.Trash-*
+
+#
 # Winddohs
+#
 
 
 # -------------------------------------
