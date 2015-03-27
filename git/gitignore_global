@@ -54,13 +54,15 @@ config.rb
 
 
 # -------------------------------------
-# C++.
+# C/C++.
 # -------------------------------------
 # Compiled Object files
 *.slo
 *.lo
 *.o
 *.obj
+*.ko
+*.elf
 
 # Precompiled Headers
 *.gch
@@ -70,6 +72,8 @@ config.rb
 *.so
 *.dylib
 *.dll
+*.so.*
+*.dylib
 
 # Fortran module files
 *.mod
@@ -84,9 +88,21 @@ config.rb
 *.exe
 *.out
 *.app
+*.i*86
+*.x86_64
+*.hex
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Debug files
+*.dSYM/
 
 
 # -------------------------------------
-# PHP Storm
+# PHP Storm.
 # -------------------------------------
 .idea
