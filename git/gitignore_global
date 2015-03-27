@@ -1,5 +1,7 @@
 # -------------------------------------
+#
 # Global Git Ignore
+#
 # -------------------------------------
 
 
@@ -11,7 +13,6 @@
 .DS_Store?
 *.swp
 # Winddohs
-
 
 
 # -------------------------------------
@@ -43,6 +44,13 @@ FirePHPCore
 sites/all/README.txt
 sites/all/modules/README.txt
 sites/all/themes/README.txt
+
+
+# -------------------------------------
+# Meteor.
+# -------------------------------------
+.meteor/local
+.meteor/meteorite
 
 
 # -------------------------------------
