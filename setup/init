@@ -12,7 +12,7 @@ l -s ~/.vimrc ~/dotfiles/vim/vimrc
 #
 # Tmux.
 #
-l -s ~/.tmuxrc ~/dotfiles/tmux/tmuxrc
+l -s ~/.tmux.conf ~/dotfiles/tmux/tmux.conf
 
 #
 # Git.
