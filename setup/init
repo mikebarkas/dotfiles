@@ -7,20 +7,20 @@
 #
 # Vim.
 #
-l -s ~/.vimrc ~/dotfiles/vim/vimrc
+l -s ~/.vimrc ~/.dotfiles/vim/vimrc
 
 #
 # Tmux.
 #
-l -s ~/.tmux.conf ~/dotfiles/tmux/tmux.conf
+l -s ~/.tmux.conf ~/.dotfiles/tmux/tmux.conf
 
 #
 # Git.
 #
-l -s ~/.gitconfig ~/dotfiles/git/gitconfig
-l -s ~/.gitignore_global ~/dotfiles/git/gitignore_global
+l -s ~/.gitconfig ~/.dotfiles/git/gitconfig
+l -s ~/.gitignore_global ~/.dotfiles/git/gitignore_global
 
 #
 # Zsh.
 #
-l -s ~/.oh-my-zsh/custom/alias.zsh ~/dotfiles/zsh/custom/alias.zsh
+l -s ~/.oh-my-zsh/custom/alias.zsh ~/.dotfiles/zsh/custom/alias.zsh
