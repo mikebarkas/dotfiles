@@ -24,3 +24,8 @@ l -s ~/.gitignore_global ~/.dotfiles/git/gitignore_global
 # Zsh.
 #
 l -s ~/.oh-my-zsh/custom/alias.zsh ~/.dotfiles/zsh/custom/alias.zsh
+
+#
+# Mutt.
+#
+l -s ~/.muttrc ~/.dotfiles/mutt/muttrc
