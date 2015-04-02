@@ -1,1 +1,26 @@
 #!
+
+# -------------------------------------
+# Set up sym links to dot files.
+# -------------------------------------
+
+#
+# Vim.
+#
+l -s ~/.vimrc ~/dotfiles/vim/vimrc
+
+#
+# Tmux.
+#
+l -s ~/.tmuxrc ~/dotfiles/tmux/tmuxrc
+
+#
+# Git.
+#
+l -s ~/.gitconfig ~/dotfiles/git/gitconfig
+l -s ~/.gitignore_global ~/dotfiles/git/gitignore_global
+
+#
+# Zsh.
+#
+l -s ~/.oh-my-zsh/custom/alias.zsh ~/dotfiles/zsh/custom/alias.zsh
