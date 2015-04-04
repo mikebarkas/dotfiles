@@ -45,15 +45,32 @@ print_message ".tmux.conf successfully linked to dotfiles."
 # -------------------------------------
 # Git.
 # -------------------------------------
+print_message "Checking for some existing git config files..."
+if [ -f ~/.gitconfig ]; then
+  print_warning ".gitconfig file found. Creating a backup."
+  mv ~/.gitconfig ~/.gitconfig-original
+fi
+ln -s -v ~/.dotfiles/git/.gitconfig ~/.gitconfig
+print_message ".gitconfig successfully linked to dotfiles."
 
+print_message "Checking for existing git ignore files..."
+if [ -f ~/.gitignore_global ]; then
+  print_warning ".gitignore_global file found. Creating a backup."
+  mv ~/.gitignore_global ~/.gitignore_global-original
+fi
+ln -s -v ~/.dotfiles/git/.gitignore_global ~/.gitignore_global
+print_message ".gitignore_global successfully linked to dotfiles."
 
-#l -s ~/.gitconfig ~/.dotfiles/git/gitconfig
-#l -s ~/.gitignore_global ~/.dotfiles/git/gitignore_global
-
-#
+# -------------------------------------
 # Zsh.
-#
-#l -s ~/.oh-my-zsh/custom/alias.zsh ~/.dotfiles/zsh/custom/alias.zsh
+# -------------------------------------
+print_message "Checking for existing Zsh custom alais files..."
+if [ -f ~/.oh-my-zsh/custom/alias.zsh ]; then
+  print_warning "Custom Zsh alias file found. Creating a backup."
+  mv ~/.oh-my-zsh/custom/alias.zsh ~/.oh-my-zsh/custom/alias.zsh-original
+fi
+ln -s -v ~/.dotfiles/zsh/custom/alias.zsh ~/.oh-my-zsh/custom/alias.zsh
+print_message "Cusomt Zsh alias file successfully linked to dotfiles."
 
 #
 # Mutt.
