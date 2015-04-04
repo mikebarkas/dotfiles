@@ -27,9 +27,9 @@ print_message "Checking for existing .vimrc file..."
 if [ -f ~/.vimrc ]; then
   print_warning ".vimrc found. Creating a backup."
   mv ~/.vimrc ~/.vimrc-original
-  ln -s -v ~/.dotfiles/vim/vimrc ~/.vimrc
-  print_message ".vimrc successfully linked to dotfiles."
 fi
+ln -s -v ~/.dotfiles/vim/vimrc ~/.vimrc
+print_message ".vimrc successfully linked to dotfiles."
 
 # -------------------------------------
 # Tmux.
@@ -38,13 +38,15 @@ print_message "Checking for existing .tmux.conf file..."
 if [ -f ~/.tmux.conf ]; then
   print_warning ".tmux.conf found. Creating a backup."
   mv ~/.tmux.conf ~/.tmux.conf-original
-  ln -s -v ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
-  print_message ".tmux.conf successfully linked to dotfiles."
 fi
+ln -s -v ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
+print_message ".tmux.conf successfully linked to dotfiles."
 
-#
+# -------------------------------------
 # Git.
-#
+# -------------------------------------
+
+
 #l -s ~/.gitconfig ~/.dotfiles/git/gitconfig
 #l -s ~/.gitignore_global ~/.dotfiles/git/gitignore_global
 
