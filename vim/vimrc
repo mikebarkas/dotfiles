@@ -105,6 +105,8 @@ set incsearch                          " Show match as search is typed.
 set ignorecase                         " Isensitive case search.
 set hlsearch                           " Highlight search patterns.
 set wrapscan                           " Wrap to top when searching.
+nnoremap n nzzzv                       " Keep match in center of window.
+nnoremap N nzzzv                       " Keep match in center of window.
 
 
 " ==============================================================================
