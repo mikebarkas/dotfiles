@@ -62,6 +62,7 @@ set timeoutlen=1000                    " Timeout for mapping delay.
 set ttimeoutlen=50                     " Timeout for key code sequence.
 set nowrap                             " Turn off page wrap.
 
+
 " =============================================================================
 " Tabs and Panes
 " =============================================================================
