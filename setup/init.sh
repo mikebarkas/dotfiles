@@ -50,7 +50,7 @@ if [ -f ~/.gitconfig ]; then
   print_warning ".gitconfig file found. Creating a backup."
   mv ~/.gitconfig ~/.gitconfig-original
 fi
-ln -s -v ~/.dotfiles/git/.gitconfig ~/.gitconfig
+ln -s -v ~/.dotfiles/git/gitconfig ~/.gitconfig
 print_message ".gitconfig successfully linked to dotfiles."
 
 print_message "Checking for existing git ignore files..."
@@ -58,7 +58,7 @@ if [ -f ~/.gitignore_global ]; then
   print_warning ".gitignore_global file found. Creating a backup."
   mv ~/.gitignore_global ~/.gitignore_global-original
 fi
-ln -s -v ~/.dotfiles/git/.gitignore_global ~/.gitignore_global
+ln -s -v ~/.dotfiles/git/gitignore_global ~/.gitignore_global
 print_message ".gitignore_global successfully linked to dotfiles."
 
 # -------------------------------------
