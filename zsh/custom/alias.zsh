@@ -2,6 +2,7 @@
 # Alias
 #
 # alias vim='/usr/local/Cellar/vim/7.4.488/bin/vim'
+alias gl9='glog -n9'
 
 #
 # Mac
