@@ -86,10 +86,16 @@ let g:netrw_preview=1                  " Preview vertical split.
 " ==============================================================================
 " Binds
 " ==============================================================================
+" Leader.
+let mapleader = ','                    " Reasign leader.
+
+" Windows.
 map <C-h> <C-w>h                       " Move focus.
 map <C-j> <C-w>j                       " Move focus.
 map <C-k> <C-w>k                       " Move focus.
 map <C-l> <C-w>l                       " Move focus.
+
+nmap ,ev :e ~/.dotfiles/vim/vimrc      " Edit me vimrc file.
 
 
 " ==============================================================================
