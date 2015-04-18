@@ -101,12 +101,12 @@ nmap <leader><S-k> :wincmd <S-k><Cr>
 nmap <leader><S-l> :wincmd <S-l><Cr>
 
 " Gits
-nmap <leader>gw :Gwrite                " Perform G write.
-nmap <leader>c :Gcommit
-nmap <leader>gr :Gread                 " Perform G read.
-nmap <leader>gm :Gmove                 " Perform G move.
-nmap <leader>gs :Gstatus               " Perform G status.
-nmap <leader>b  :w<Bar>bd             " Write commit and close buffer.
+nmap <leader>fw :Gwrite                " Perform G write.
+nmap <leader>fc :Gcommit
+nmap <leader>fr :Gread                 " Perform G read.
+nmap <leader>fm :Gmove                 " Perform G move.
+nmap <leader>fs :Gstatus               " Perform G status.
+nmap <leader>fb  :w<Bar>bd             " Write commit and close buffer.
 
 
 " ==============================================================================
