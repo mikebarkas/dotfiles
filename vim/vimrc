@@ -101,7 +101,7 @@ nmap <leader>gw :Gwrite                " Perform G write.
 nmap <leader>gr :Gread                 " Perform G read.
 nmap <leader>gm :Gmove                 " Perform G move.
 nmap <leader>gs :Gstatus               " Perform G status.
-nmap <leader>w  :wbd                   " Write commit and close buffer.
+nmap <leader>w  :w<Bar>bd              " Write commit and close buffer.
 
 
 " ==============================================================================
