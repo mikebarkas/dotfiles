@@ -97,11 +97,11 @@ nmap <C-l> <C-w>l                      " Move focus.
 
 " Gits
 nmap <leader>gw :Gwrite                " Perform G write.
-"nmap <leader>gc :Gcommit
+nmap <leader>c :Gcommit
 nmap <leader>gr :Gread                 " Perform G read.
 nmap <leader>gm :Gmove                 " Perform G move.
 nmap <leader>gs :Gstatus               " Perform G status.
-nmap <leader>r  :w<Bar>bd             " Write commit and close buffer.
+nmap <leader>b  :w<Bar>bd             " Write commit and close buffer.
 
 
 " ==============================================================================
