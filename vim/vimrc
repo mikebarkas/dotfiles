@@ -90,11 +90,13 @@ let mapleader = ','                    " Reassign leader.
 nmap <leader>ev :e ~/.dotfiles/vim/vimrc  " Edit me vimrc file.
 
 " Windows.
-nmap <leader>h :wincmd h                      " Move focus.
-nmap <leader>j :wincmd j                      " Move focus.
-nmap <leader>k :wincmd k                      " Move focus.
-nmap <leader>l :wincmd l                      " Move focus.
+nmap <leader>h :wincmd h<Cr>                      " Move focus.
+nmap <leader>j :wincmd j<Cr>                      " Move focus.
+nmap <leader>k :wincmd k<Cr>                      " Move focus.
+nmap <leader>l :wincmd l<Cr>                      " Move focus.
 
+nmap <leader><S-h> :wincmd <S-h><Cr>
+nmap <leader><S-j> :wincmd <S-j><Cr>
 " Gits
 nmap <leader>gw :Gwrite                " Perform G write.
 nmap <leader>c :Gcommit
