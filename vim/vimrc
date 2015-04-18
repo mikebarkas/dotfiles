@@ -86,7 +86,7 @@ let g:netrw_preview=1                  " Preview vertical split.
 " ==============================================================================
 " Binds
 " ==============================================================================
-let mapleader = ','                    " Reasign leader.
+let mapleader = ','                    " Reassign leader.
 nmap <leader>ev :e ~/.dotfiles/vim/vimrc  " Edit me vimrc file.
 
 " Windows.
@@ -96,12 +96,12 @@ nmap <C-k> <C-w>k                      " Move focus.
 nmap <C-l> <C-w>l                      " Move focus.
 
 " Gits
-nmap <leader>gw :Gwrite                " Simplify G write.
-nmap <leader>gc :Gcommit               " Simplify G commit.
-nmap <leader>gr :Gread                 " Simplify G read.
-nmap <leader>gm :Gmove                 " Simplify G move.
-nmap <leader>gs :Gstatus               " Simplify G status.
-nmap <leader>w :w|bd                   " Write commit and close buffer.
+nmap <leader>gw :Gwrite                " Perform G write.
+"nmap <leader>gc :Gcommit
+nmap <leader>gr :Gread                 " Perform G read.
+nmap <leader>gm :Gmove                 " Perform G move.
+nmap <leader>gs :Gstatus               " Perform G status.
+nmap <leader>w  :wbd                   " Write commit and close buffer.
 
 
 " ==============================================================================
