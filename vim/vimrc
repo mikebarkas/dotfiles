@@ -136,6 +136,7 @@ nnoremap <CR> :noh<CR><CR>             " Clear highlighted.    :let @/ = ""
 " Auto complete.
 " ==============================================================================
 set complete=.,w,b,t                   " Completion location priority.
+set omnifunc=syntaxcomplete#Complete
 
 
 " ==============================================================================
