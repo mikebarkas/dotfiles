@@ -108,6 +108,10 @@ nmap <leader>fm :Gmove                 " Perform G move.
 nmap <leader>fs :Gstatus               " Perform G status.
 nmap <leader>fb  :w<Bar>bd             " Write commit and close buffer.
 
+" Omni Complete.
+imap <leader>cc <C-x><C-o>
+imap <leader>cf <C-x><C-f>
+imap <leader>cn <C-n>
 
 " ==============================================================================
 " Highlight white spaces.
