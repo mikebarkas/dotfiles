@@ -29,6 +29,8 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'elzr/vim-json'
 Plugin 'pangloss/vim-javascript'
 Bundle 'joonty/vdebug.git'
+Plugin 'majutsushi/tagbar'
+
 "Plugin 'mileszs/ack.vim'
 
 Plugin 'git://drupalcode.org/project/vimrc.git', {'rtp': 'bundle/vim-plugin-for-drupal/'}
