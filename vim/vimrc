@@ -90,6 +90,7 @@ let g:netrw_preview=1                  " Preview vertical split.
 " ==============================================================================
 let mapleader = ','                    " Reassign leader.
 nmap <leader>ev :e ~/.dotfiles/vim/vimrc  " Edit me vimrc file.
+nmap <S-u> :redo<Cr>                   " Undo my undo.
 
 " Windows.
 nmap <leader>h :wincmd h<Cr>
