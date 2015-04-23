@@ -94,8 +94,9 @@ let g:netrw_list_hide='.DS_Store'      " Hide list.
 " ==============================================================================
 let mapleader = ','                    " Reassign leader.
 imap jj <Esc>
-nmap <leader>ev :e ~/.dotfiles/vim/vimrc  " Edit me vimrc file.
-nmap <S-u> :redo<Cr>                   " Undo my undo.
+nmap <leader>ev :e ~/.dotfiles/vim/vimrc
+nmap <S-u> :redo<Cr>
+nmap <leader>tt :Tagbar<Cr>
 
 " Windows.
 nmap <silent> <leader>h :wincmd h<Cr>
@@ -109,19 +110,22 @@ nmap <leader><S-k> :wincmd <S-k><Cr>
 nmap <leader><S-l> :wincmd <S-l><Cr>
 
 " Gits
-nmap <leader>fw :Gwrite                " Perform G write.
+nmap <leader>fw :Gwrite
 nmap <leader>fc :Gcommit
-nmap <leader>fr :Gread                 " Perform G read.
-nmap <leader>fm :Gmove                 " Perform G move.
-nmap <leader>fs :Gstatus               " Perform G status.
-nmap <leader>fb  :w<Bar>bd             " Write commit and close buffer.
+nmap <leader>fr :Gread
+nmap <leader>fm :Gmove
+nmap <leader>fs :Gstatus
+nmap <leader>fb  :w<Bar>bd
 
 " Omni Complete.
 imap <leader>cc <C-x><C-o>
 imap <leader>cf <C-x><C-f>
 imap <leader>cn <C-n>
 
-nmap <leader>tt :Tagbar<Cr>
+" Search
+nnoremap n nzzzv
+nnoremap N nzzzv
+nnoremap <silent> <CR> :noh<CR><CR>
 
 
 " ==============================================================================
@@ -142,9 +146,6 @@ set incsearch                          " Show match as search is typed.
 set ignorecase                         " Isensitive case search.
 set hlsearch                           " Highlight search patterns.
 set wrapscan                           " Wrap to top when searching.
-nnoremap n nzzzv                       " Keep match in center of window.
-nnoremap N nzzzv                       " Keep match in center of window.
-nnoremap <silent> <CR> :noh<CR><CR>             " Clear highlighted.    :let @/ = ""
 
 
 " ==============================================================================
