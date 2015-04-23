@@ -97,10 +97,10 @@ nmap <leader>ev :e ~/.dotfiles/vim/vimrc  " Edit me vimrc file.
 nmap <S-u> :redo<Cr>                   " Undo my undo.
 
 " Windows.
-nmap <leader>h :wincmd h<Cr>
-nmap <leader>j :wincmd j<Cr>
-nmap <leader>k :wincmd k<Cr>
-nmap <leader>l :wincmd l<Cr>
+nmap <silent> <leader>h :wincmd h<Cr>
+nmap <silent> <leader>j :wincmd j<Cr>
+nmap <silent> <leader>k :wincmd k<Cr>
+nmap <silent> <leader>l :wincmd l<Cr>
 
 nmap <leader><S-h> :wincmd <S-h><Cr>
 nmap <leader><S-j> :wincmd <S-j><Cr>
