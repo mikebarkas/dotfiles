@@ -93,6 +93,7 @@ let g:netrw_list_hide='.DS_Store'      " Hide list.
 " Binds
 " ==============================================================================
 let mapleader = ','                    " Reassign leader.
+imap jj <Esc>
 nmap <leader>ev :e ~/.dotfiles/vim/vimrc  " Edit me vimrc file.
 nmap <S-u> :redo<Cr>                   " Undo my undo.
 
