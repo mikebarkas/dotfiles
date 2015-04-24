@@ -32,7 +32,11 @@ Bundle 'joonty/vdebug.git'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-php/tagbar-phpctags.vim'
 "Plugin 'mileszs/ack.vim'
-
+" SnipMate
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+" Drupal
 Plugin 'git://drupalcode.org/project/vimrc.git', {'rtp': 'bundle/vim-plugin-for-drupal/'}
 
 call vundle#end()                      " End of plugin management list.
