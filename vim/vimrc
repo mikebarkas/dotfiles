@@ -102,6 +102,7 @@ nmap <leader>ev :e ~/.dotfiles/vim/vimrc
 nmap <S-u> :redo<Cr>
 nmap <leader>tt :Tagbar<Cr>
 nmap <silent> <leader>p :set paste!<Cr>
+nmap <silent> <leader>` :b#<Cr>
 
 " Windows.
 nmap <silent> <leader>h :wincmd h<Cr>
