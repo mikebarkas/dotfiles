@@ -134,6 +134,8 @@ nnoremap n nzzzv
 nnoremap N nzzzv
 nnoremap <silent> <CR> :noh<CR><CR>
 
+" Diff file and buffer.
+nmap <leader>df :w !diff % -<Cr>
 
 " ==============================================================================
 " Highlight white spaces.
