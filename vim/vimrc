@@ -99,6 +99,7 @@ let g:netrw_list_hide='.DS_Store'      " Hide list.
 " ==============================================================================
 let mapleader = ','                    " Reassign leader.
 imap jj <Esc>
+imap kj <Esc>:w<Cr>
 nmap <leader>ev :e ~/.dotfiles/vim/vimrc
 nmap <S-u> :redo<Cr>
 nmap <leader>tt :Tagbar<Cr>
