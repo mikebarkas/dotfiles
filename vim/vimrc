@@ -196,10 +196,7 @@ set foldmethod=indent                  " Fold on indent level.
 " Color Schemes
 " =============================================================================
 "colorscheme xaptao
-"colorscheme railscasts
 colorscheme jellybeans
-"colorscheme github
-"colorscheme molokai
 
 
 " ==============================================================================
