@@ -231,7 +231,7 @@ let g:vdebug_options= {
 \     "timeout" : 22,
 \     "watch_window_style" : 'compact',
 \}
-
+" watch_window_height
 
 " ==============================================================================
 " Status line.
