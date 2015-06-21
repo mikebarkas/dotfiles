@@ -19,6 +19,9 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 # Drupal
 alias dcs="phpcs --standard=Drupal,DrupalPractice --extensions='php,module,inc,install,test,profile,theme,js,css,info,txt' --ignore='*.features.*.inc'"
 
+# Meteor
+alias v0m="VELOCITY=0 meteor"
+
 #
 # Config LESS output.
 #
