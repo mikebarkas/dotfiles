@@ -254,12 +254,16 @@ set statusline+=Line:%l-%L\ Buf:#%n
 " ==============================================================================
 " Airline Statusline
 " ==============================================================================
+let g:airline_theme='xaptao'
 let g:airline_powerline_fonts = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#whitespace#symbol = '!'
 let g:airline#extensions#whitespace#checks = [ 'indent', 'trailing' ]
 let g:airline#extensions#whitespace#show_message = 1
+let g:airline_inactive_collapse=1
+let g:airline_left_sep=''
+let g:airline_right_sep=''
 
 
 " ==============================================================================
