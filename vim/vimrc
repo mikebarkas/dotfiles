@@ -138,6 +138,7 @@ nnoremap <silent> <CR> :noh<CR><CR>
 " Diff file and buffer.
 nmap <leader>df :w !diff % -<Cr>
 
+
 " ==============================================================================
 " Highlight white spaces.
 " ==============================================================================
@@ -190,6 +191,12 @@ set foldlevelstart=2                   " Fold level when opening buffer.
 set foldnestmax=4                      " Max nested fold level.
 set foldmethod=indent                  " Fold on indent level.
 "nnoremap <space> za
+
+
+" =============================================================================
+" Help
+" =============================================================================
+autocmd FileType help wincmd L
 
 
 " =============================================================================
