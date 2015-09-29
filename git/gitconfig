@@ -28,8 +28,6 @@
 
 # Alias are in zsh.
 [alias]
-  gs = git status -sb
-
   lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit
 
   # Checkout Stash pull requests.
