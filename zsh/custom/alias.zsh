@@ -2,10 +2,12 @@
 # Alias
 #
 alias vim='/usr/local/Cellar/vim/7.4.488/bin/vim'
+alias gs="git status -sb"
 alias gl9='glog -n9'
-alias sv="_ vim"
+alias sv="sudo vim"
 alias v="vim"
 alias v.="vim ."
+alias v,="vim ."
 
 
 # Mac
