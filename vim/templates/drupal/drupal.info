@@ -1,0 +1,9 @@
+name = MODULE_NAME
+description = DESCRIPTION_OF_MODULE.
+core = 7.x
+package = SUB_PACKAGE
+dependencies[] = MODULE_NAME
+
+files[] = includes/FILENAME.php
+
+configure = admin/config/MODULE/CONFIG
