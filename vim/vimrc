@@ -298,3 +298,4 @@ autocmd BufNewFile main.c 0r ~/.dotfiles/vim/templates/c/main.c
 autocmd BufNewFile main.cpp 0r ~/.dotfiles/vim/templates/c/main.cpp
 " Drupal
 autocmd BufNewFile drupal.module 0r ~/.dotfiles/vim/templates/drupal/drupal.module
+autocmd BufNewFile drupal.info 0r ~/.dotfiles/vim/templates/drupal/drupal.info
