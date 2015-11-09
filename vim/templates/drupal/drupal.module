@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Module file for MODULE.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function MODULE_menu() {
+  $items['url/here'] = array(
+    'title' => 'MODULE',
+    'page callback' => 'FUNCTION',
+    //'page arguments' => array(1),
+    'access arguments' => array('administer site configuration'),
+    'weight' => 15,
+    'type' => MENU_LOCAL_TASK,
+  );
+
+  return $items;
+}
