@@ -76,3 +76,14 @@ print_message "Cusomt Zsh alias file successfully linked to dotfiles."
 # Mutt.
 #
 #l -s ~/.muttrc ~/.dotfiles/mutt/muttrc
+
+# -------------------------------------
+# Npm
+# -------------------------------------
+print_message "Checking for existing .npmrc file..."
+if [ -f ~/.npmrc ]; then
+  print_warning ".npmrc found. Creating a backup."
+  mv ~/.npmrc ~/.npmrc-original
+fi
+ln -s -v ~/.dotfiles/npm/npmrc ~/.npmrc
+print_message ".npmrc successfully linked to dotfiles."
