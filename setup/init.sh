@@ -64,13 +64,13 @@ print_message ".gitignore_global successfully linked to dotfiles."
 # -------------------------------------
 # Zsh.
 # -------------------------------------
-print_message "Checking for existing Zsh custom alais files..."
-if [ -f ~/.oh-my-zsh/custom/alias.zsh ]; then
-  print_warning "Custom Zsh alias file found. Creating a backup."
-  mv ~/.oh-my-zsh/custom/alias.zsh ~/.oh-my-zsh/custom/alias.zsh-original
+print_message "Checking for existing Zsh file..."
+if [ -f ~/.zshrc ]; then
+  print_warning "Zshrc file found. Creating a backup."
+  mv ~/.zshrc ~/.zshrc-original
 fi
-ln -s -v ~/.dotfiles/zsh/custom/alias.zsh ~/.oh-my-zsh/custom/alias.zsh
-print_message "Cusomt Zsh alias file successfully linked to dotfiles."
+ln -s -v ~/.dotfiles/zsh/zshrc ~/.zshrc
+print_message "Zshrc file successfully linked to dotfiles."
 
 #
 # Mutt.
