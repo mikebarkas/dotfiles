@@ -69,7 +69,7 @@ set timeoutlen=1000                    " Timeout for mapping delay.
 set ttimeoutlen=50                     " Timeout for key code sequence.
 set nowrap                             " Turn off page wrap.
 set exrc                               " Enable project-specific .vimrc
-
+set showbreak=↪                        " Linebreak prefix.
 
 " =============================================================================
 " Tabs and Panes
