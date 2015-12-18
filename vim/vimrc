@@ -100,13 +100,18 @@ let g:netrw_list_hide='.DS_Store'      " Hide list.
 " Binds
 " ==============================================================================
 let mapleader = "\<Space>"             " Reassign leader.
+
+" Saving and quitting.
 imap jj <Esc>
 imap kj <Esc>:w<Cr>
-nmap <leader>ev :e ~/.dotfiles/vim/vimrc
+nmap <leader>q :q<Cr>
+nmap <leader>s :w<Cr>
+
 nmap <S-u> :redo<Cr>
 nmap <leader>tt :Tagbar<Cr>
 nmap <silent> <leader>p :set paste!<Cr>
 nmap <silent> <leader>` :b#<Cr>
+nmap <leader>ev :e ~/.dotfiles/vim/vimrc
 
 " Windows.
 nmap <silent> <leader>h :wincmd h<Cr>
