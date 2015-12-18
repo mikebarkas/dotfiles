@@ -185,8 +185,12 @@ augroup module
   autocmd BufRead,BufNewFile *.info set filetype=ini
   autocmd BufRead,BufNewFile *.make set filetype=ini
 augroup END
+
+" HTML and CSS.
 autocmd BufRead,BufNewFile *.twig set syntax=html
 
+" Javascript.
+autocmd BufRead,BufNewFile *.json set filetype=json syntax=javascript
 
 " ==============================================================================
 " Folding
