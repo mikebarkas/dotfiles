@@ -71,6 +71,7 @@ set nowrap                             " Turn off page wrap.
 set exrc                               " Enable project-specific .vimrc
 set showbreak=↪                        " Linebreak prefix.
 
+
 " =============================================================================
 " Tabs and Panes
 " =============================================================================
@@ -118,7 +119,7 @@ nmap <leader><S-j> :wincmd <S-j><Cr>
 nmap <leader><S-k> :wincmd <S-k><Cr>
 nmap <leader><S-l> :wincmd <S-l><Cr>
 
-" Gits
+" Gits.
 nmap <leader>fw :Gwrite<Cr>
 nmap <leader>fc :Gcommit
 nmap <leader>fr :Gread
@@ -131,10 +132,13 @@ imap <leader>cc <C-x><C-o>
 imap <leader>cf <C-x><C-f>
 imap <leader>cn <C-n>
 
-" Search
+" Search.
 nnoremap n nzzzv
 nnoremap N nzzzv
 nnoremap <silent> <CR> :noh<CR><CR>
+
+" Focus current fold.
+nnoremap <leader>z zMzvzz
 
 " Diff file and buffer.
 nmap <leader>df :w !diff % -<Cr>
