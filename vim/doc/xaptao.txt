@@ -32,5 +32,17 @@ leader ` = :b# enter
 leader tt = :Tagbar enter
 
 
+-------------------------
+FUGITIVE GIT
+
+leader fw = :Gwrite
+leader fc = :Gcommit
+leader fs = :Gstatus
+leader fb =  :w <bar> bd
+
+
+
+
+
 
 vim:tw=78:sw=4:ft=help:norl:
