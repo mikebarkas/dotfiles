@@ -1,0 +1,18 @@
+*xaptao.txt*   Notes for custom xaptao.
+*xaptao*
+
+==============================================================================
+
+CUSTOM KEY BINDINGS
+
+Mapleader is <Space>
+
+SAVING AND QUITING
+jj = escape
+kj = :w and enter
+leader q = :q enter
+leader s = :w enter
+
+
+
+vim:tw=78:sw=4:ft=help:norl:
