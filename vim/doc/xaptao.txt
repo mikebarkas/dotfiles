@@ -15,11 +15,21 @@ CUSTOM KEY BINDINGS                                           *xaptao-bindings*
 Mapleader is <Space>
 
 -------------------------
-SAVING AND QUITING
+SAVING AND QUITTING
+
 jj = escape
 kj = :w and enter
 leader q = :q enter
 leader s = :w enter
+
+
+-------------------------
+MISCELLANEOUS
+
+shift u = :redo enter
+leader p = :set paste! enter
+leader ` = :b# enter
+leader tt = :Tagbar enter
 
 
 
