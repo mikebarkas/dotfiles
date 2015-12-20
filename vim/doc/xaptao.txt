@@ -2,11 +2,19 @@
 *xaptao*
 
 ==============================================================================
+CONTENTS                                                     *xaptao-contents*
 
-CUSTOM KEY BINDINGS
+  1. Custom key bindings ........ |xaptao-bindings|
+
+
+
+
+==============================================================================
+CUSTOM KEY BINDINGS                                           *xaptao-bindings*
 
 Mapleader is <Space>
 
+-------------------------
 SAVING AND QUITING
 jj = escape
 kj = :w and enter
