@@ -9,6 +9,8 @@ alias sv="sudo vim"
 alias v="vim"
 alias v.="vim ."
 alias v,="vim ."
+alias tls="tmux ls"
+alias tat="tmux a -t"
 
 
 # Mac
