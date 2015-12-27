@@ -18,8 +18,9 @@ Mapleader is <Space>
 SAVING AND QUITTING
 
 jj = escape
-kj = :w and enter
+kj = :w enter
 leader q = :q enter
+leader d = :bd enter
 leader s = :w enter
 
 
