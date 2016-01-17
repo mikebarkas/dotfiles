@@ -1,7 +1,7 @@
 #
 # Alias
 #
-alias vim='/usr/local/Cellar/vim/7.4.488/bin/vim'
+alias vim='/usr/local/Cellar/vim/7.4.1016/bin/vim'
 alias gs="git status -sb"
 alias gb="git branch -vv"
 alias gl9='glog -n9'
