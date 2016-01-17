@@ -66,7 +66,6 @@ sites/*/services*.yml
 */sites/*/settings*.php
 
 # Files containing generated content.
-files/
 sites/*/files
 sites/*/private
 */sites/*/files/
