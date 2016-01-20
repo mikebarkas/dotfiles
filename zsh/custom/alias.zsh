@@ -1,5 +1,5 @@
 #
-# Alias
+# Alias.
 #
 alias vim='/usr/local/Cellar/vim/7.4.1016/bin/vim'
 alias gs="git status -sb"
@@ -12,8 +12,15 @@ alias v,="vim ."
 alias tls="tmux ls"
 alias tat="tmux a -t"
 
+# Vagrant.
+alias vg="vagrant"
+alias vgu="vagrant up"
+alias vgs="vagrant ssh"
+alias vgrp="vagrant reload --provision"
+alias vgd="vagrant destroy"
+alias vgbl="vagrant box list"
 
-# Mac
+# Mac.
 # Show/hide hidden files.
 alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
@@ -21,10 +28,10 @@ alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && kil
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
-# Drupal
+# Drupal.
 alias dcs="phpcs --standard=Drupal,DrupalPractice --extensions='php,module,inc,install,test,profile,theme,js,css,info,txt' --ignore='*.features.*.inc'"
 
-# Meteor
+# Meteor.
 alias v0m="VELOCITY=0 meteor"
 
 #
