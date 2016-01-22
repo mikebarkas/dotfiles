@@ -12,5 +12,8 @@ Run this _init.sh_ script.
 
 #### Result Example
 
+Your original backed up configuration file.<br/>
 `~/.vimrc-original`
+
+New symlink configuration file.<br/>
 `~/.vimrc -> ~/.dotfiles/vim/vimrc`
