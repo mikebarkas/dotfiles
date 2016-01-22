@@ -6,8 +6,7 @@ If existing file found, create a backup of the file and symlinks a new configrat
 
 #### Usage
 
-Run this _init.sh_ script.
-
+Run this _init.sh_ script.<br/>
 `setup/./init.sh`
 
 #### Result Example
