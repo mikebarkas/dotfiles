@@ -2,12 +2,17 @@
 
 Home directory config files.
 
-1. Setup Links
-2. Tmux
-3. Vim
-4. Mutt
-5. Zsh
-6. Git
+* Setup Links _(see readme in setup)_
+* Tmux
+* Vim
+* Mutt
+* Zsh
+* Git
+* Npm
 
+#### Setup
 
-_Under development._
+Run the setup script, see setup readme for details.<br/>
+`setup/./init.sh`
+
+Symlinks are created to the configuration files in the _.dotfiles_ directory.
