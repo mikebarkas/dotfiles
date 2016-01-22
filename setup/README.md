@@ -10,4 +10,7 @@ Run this _init.sh_ script.
 
 `setup/./init.sh`
 
+#### Result Example
 
+`~/.vimrc-original`
+`~/.vimrc -> ~/.dotfiles/vim/vimrc`
