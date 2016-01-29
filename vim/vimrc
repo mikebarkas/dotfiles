@@ -153,17 +153,6 @@ nmap <leader>df :w !diff % -<Cr>
 
 
 " ==============================================================================
-" Highlight white spaces.
-" ==============================================================================
-" highlight ExtraWhitespace ctermbg=red
-" match ExtraWhitespace /\s\+$/
-" autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-" autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-" autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-" autocmd BufWinLeave * call clearmatches()
-
-
-" ==============================================================================
 " Search and Replace
 " ==============================================================================
 set incsearch                          " Show match as search is typed.
