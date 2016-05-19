@@ -8,3 +8,9 @@ git = True
 
 [pager]
 pager = LESS='FSRX' less
+
+[extensions]
+color =
+
+[color]
+mode = auto
