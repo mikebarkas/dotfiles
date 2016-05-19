@@ -5,3 +5,6 @@ editor = vim
 
 [diff]
 git = True
+
+[pager]
+pager = LESS='FSRX' less
