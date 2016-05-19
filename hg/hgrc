@@ -1,2 +1,5 @@
 [ui]
 username = Mike Barkas <mike@barkas.com>
+verbose = True
+editor = vim
+
