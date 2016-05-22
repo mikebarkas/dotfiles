@@ -10,6 +10,7 @@
 coverage
 .vagrant
 */settings/local.py
+local_settings.py
 public/static/
 public/media/
 conf/pillar/*/deploy
