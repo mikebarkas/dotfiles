@@ -40,6 +40,8 @@ export NVM_DIR="/Users/mike/.nvm"
 #
 # Virtualenvwrapper configuration.
 #
+export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.5/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/Library/Frameworks/Python.framework/Versions/3.5/bin/virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/dev/python
 source /usr/local/bin/virtualenvwrapper.sh
