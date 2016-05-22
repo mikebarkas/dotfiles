@@ -1,14 +1,27 @@
-# Byte-compiled / optimized / DLL files
+*.sw[po]
+*.py[co]
+.project
+.pydevproject
+*~
+*.db
+*.orig
+*.DS_Store
+.coverage
+coverage
+.vagrant
+*/settings/local.py
+public/static/
+public/media/
+conf/pillar/*/deploy
+*.priv
+.env
+node_modules
+*/static/js/bundle.js
+*/static/js/vendors.js
+*/static/libs/modernizr.js
+*/static/css
 __pycache__/
-*.py[cod]
-
-# OSX Finder turds
-.DS_Store
-
-# C extensions
 *.so
-
-# Distribution / packaging
 bin/
 build/
 develop-eggs/
@@ -22,24 +35,11 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
-
-# Installer logs
 pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-.tox/
-.coverage
 .cache
 nosetests.xml
 coverage.xml
-
-# Translations
 *.mo
-
-# Django stuff:
 *.log
 *.pot
-
-# Sphinx documentation
 docs/_build/
