@@ -62,6 +62,17 @@ ln -s -v ~/.dotfiles/git/gitignore_global ~/.gitignore_global
 print_message ".gitignore_global successfully linked to dotfiles."
 
 # -------------------------------------
+# Mercurial.
+# -------------------------------------
+print_message "Checking for existing hg file..."
+if [ -f ~/.hgrc ]; then
+  print_warning "hgrc file found. Creating a backup."
+  mv ~/.hgrc ~/.hgrc-original
+fi
+ln -s -v ~/.dotfiles/hg/hgrc ~/.hgrc
+print_message "hgrc file successfully linked to dotfiles."
+
+# -------------------------------------
 # Zsh.
 # -------------------------------------
 print_message "Checking for existing Zsh file..."
