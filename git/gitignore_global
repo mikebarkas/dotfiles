@@ -175,6 +175,8 @@ ENV/
 # Spyder project settings
 .spyderproject
 
+# database files
+*.sqlite3
 
 # -------------------------------------
 # Node.
