@@ -2,6 +2,7 @@
 username = Mike Barkas <mike@barkas.com>
 verbose = True
 editor = vim
+ignore = ~/.dotfiles/hg/hgignore
 
 [diff]
 git = True
