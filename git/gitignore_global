@@ -91,14 +91,56 @@ sites/all/themes/README.txt
 # Python.
 # -------------------------------------
 # Byte-compiled / optimized / DLL files
+*.sw[po]
+*.py[co]
+.project
+.pydevproject
+*~
+*.db
+*.orig
+*.DS_Store
+.coverage
+coverage
+.vagrant
+*/settings/local.py
+local_settings.py
+public/static/
+public/media/
+conf/pillar/*/deploy
+*.priv
+.env
+node_modules
+*/static/js/bundle.js
+*/static/js/vendors.js
+*/static/libs/modernizr.js
+*/static/css
+__pycache__/
+*.so
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-log.txt
+.cache
+nosetests.xml
+coverage.xml
+*.mo
+*.log
+*.pot
+docs/_build/
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
 *.so
-
-# Distribution / packaging
 .Python
 env/
 build/
@@ -115,49 +157,31 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
-
-# PyInstaller
 *.manifest
 *.spec
-
-# Installer logs
 pip-log.txt
-pip-delete-this-directory.txt
-
 # Unit test / coverage reports
 htmlcov/
-.tox/
 .coverage
 .coverage.*
 .cache
 nosetests.xml
 coverage.xml
 *,cover
-.hypothesis/
-
-# Translations
 *.mo
 *.pot
-
-# Django stuff:
 *.log
 local_settings.py
 
-# Flask stuff:
+# Flask
 instance/
 .webassets-cache
 
-# Scrapy stuff:
+# Scrapy
 .scrapy
 
 # Sphinx documentation
 docs/_build/
-
-# PyBuilder
-target/
-
-# IPython Notebook
-.ipynb_checkpoints
 
 # pyenv
 .python-version
@@ -171,9 +195,6 @@ celerybeat-schedule
 # virtualenv
 venv/
 ENV/
-
-# Spyder project settings
-.spyderproject
 
 # database files
 *.sqlite3
