@@ -5,6 +5,7 @@ syntax: glob
 .pydevproject
 *~
 *.db
+*.sqlite3
 *.orig
 *.DS_Store
 .coverage
