@@ -1,14 +1,15 @@
 ## Dotfiles
 
-Home directory config files.
+Home directory configuration files.
 
 * Setup Links _(see readme in setup)_
 * Tmux
 * Vim
-* Mutt
+* Mutt (not finished)
 * Zsh
 * Git
 * Npm
+* Hg
 
 #### Setup
 
