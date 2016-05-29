@@ -12,6 +12,7 @@ pager = LESS='FSRX' less
 
 [extensions]
 color =
+rebase =
 
 [color]
 mode = auto
