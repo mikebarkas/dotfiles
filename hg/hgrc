@@ -11,6 +11,7 @@ git = True
 color =
 rebase =
 pager =
+shelve =
 
 [color]
 mode = auto
