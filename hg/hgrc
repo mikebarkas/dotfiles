@@ -13,6 +13,9 @@ rebase =
 pager =
 shelve =
 
+[alias]
+l=log --graph --style compact --limit 6
+
 [color]
 mode = auto
 
