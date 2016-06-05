@@ -7,9 +7,6 @@ ignore = ~/.dotfiles/hg/hgignore
 [diff]
 git = True
 
-[pager]
-pager = LESS='FSRX' less
-
 [extensions]
 color =
 rebase =
@@ -17,3 +14,6 @@ pager =
 
 [color]
 mode = auto
+
+[pager]
+pager = LESS='FSRX' less
