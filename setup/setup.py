@@ -16,7 +16,8 @@ dotfiles = [
     ('testtwo-dir', '.testtwo'),
 ]
 
-os.chdir(os.path.expanduser('~'))
+home_directory = os.path.expanduser('~')
+os.chdir(home_directory)
 
 # Backup existing files and link to dotfiles directory.
 for directory, dotfile in dotfiles:
