@@ -12,8 +12,14 @@ class color:
     end = '\033[00m'
 
 dotfiles = [
-    ('testone-dir', '.testone'),
-    ('testtwo-dir', '.testtwo'),
+    ('git',  '.gitconfig'),
+    ('git',  '.gitignore_global'),
+    ('hg',   '.hgrc'),
+    ('mutt', '.muttrc'),
+    ('npm',  '.npmrc'),
+    ('tmux', '.tmux.conf'),
+    ('vim',  '.vimrc'),
+    ('zsh',  '.zshrc'),
 ]
 
 home_directory = os.path.expanduser('~')
@@ -33,7 +39,7 @@ for directory, dotfile in dotfiles:
         os.rename(dotfile, dotfile + '-original')
 
     print 'Symlinking ' + color.green + dotfile + color.end + ' in home directory..'
-    os.symlink('/tmp/' + dotfile[1:], dotfile)
+    os.symlink(home_directory + '/.testdir/' + directory + '/' + dotfile[1:], dotfile)
 
     print ''
 
