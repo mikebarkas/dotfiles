@@ -39,7 +39,7 @@ for directory, dotfile in dotfiles:
         os.rename(dotfile, dotfile + '-original')
 
     print 'Symlinking ' + color.green + dotfile + color.end + ' in home directory..'
-    os.symlink(home_directory + '/.testdir/' + directory + '/' + dotfile[1:], dotfile)
+    os.symlink(home_directory + '/.dotfiles/' + directory + '/' + dotfile[1:], dotfile)
 
     print ''
 
