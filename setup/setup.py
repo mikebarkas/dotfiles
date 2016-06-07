@@ -11,28 +11,28 @@ class color:
     cyan = '\033[1;36m'
     end = '\033[00m'
 
-rcfiles = [
-    '.testone',
-    '.testtwo',
+dotfiles = [
+    ('testone-dir', '.testone'),
+    ('testtwo-dir', '.testtwo'),
 ]
 
 os.chdir(os.path.expanduser('~'))
 
-# Backup existing files and link to rcfiles directory.
-for rcfile in rcfiles:
-    print 'Checking for existing ' + color.cyan + rcfile + color.end + ' file.'
+# Backup existing files and link to dotfiles directory.
+for directory, dotfile in dotfiles:
+    print 'Checking for existing ' + color.cyan + dotfile + color.end + ' file.'
 
-    if os.path.islink(rcfile):
+    if os.path.islink(dotfile):
         print color.yellow + 'File already linked.' + color.end
         print ''
         continue
 
-    if os.path.isfile(rcfile):
+    if os.path.isfile(dotfile):
         print color.yellow + 'File found.. making backup of existing file.' + color.end
-        os.rename(rcfile, rcfile + '-original')
+        os.rename(dotfile, dotfile + '-original')
 
-    print 'Symlinking ' + color.green + rcfile + color.end + ' in home directory..'
-    os.symlink('/tmp/' + rcfile[1:], rcfile)
+    print 'Symlinking ' + color.green + dotfile + color.end + ' in home directory..'
+    os.symlink('/tmp/' + dotfile[1:], dotfile)
 
     print ''
 
