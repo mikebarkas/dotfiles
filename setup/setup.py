@@ -20,10 +20,11 @@ os.chdir(os.path.expanduser('~'))
 
 # Backup existing files and link to rcfiles directory.
 for rcfile in rcfiles:
-    print 'Checking for existing ' + color.cyan + rcfile + color.end
+    print 'Checking for existing ' + color.cyan + rcfile + color.end + ' file.'
 
     if os.path.islink(rcfile):
         print color.yellow + 'File already linked.' + color.end
+        print ''
         continue
 
     if os.path.isfile(rcfile):
