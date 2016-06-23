@@ -33,6 +33,7 @@ Bundle 'joonty/vdebug.git'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-php/tagbar-phpctags.vim'
 Plugin 'rust-lang/rust.vim'
+Bundle 'cespare/vim-toml'
 "Plugin 'mileszs/ack.vim'
 " SnipMate
 Plugin 'MarcWeber/vim-addon-mw-utils'
