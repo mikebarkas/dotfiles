@@ -1,16 +1,25 @@
 #
 # Alias.
 #
+
+# Vim.
 alias vim='/usr/local/Cellar/vim/7.4.1016/bin/vim'
-alias gs="git status -sb"
-alias gb="git branch -vv"
-alias gl9='glog -n9'
 alias sv="sudo vim"
 alias v="vim"
 alias v.="vim ."
 alias v,="vim ."
+
+# Git.
+alias gs="git status -sb"
+alias gb="git branch -vv"
+alias gl9='glog -n9'
+
+# Tmux.
 alias tls="tmux ls"
 alias tat="tmux a -t"
+
+# Mercurial.
+alias hgs="hg status"
 
 # Vagrant.
 alias vg="vagrant"
