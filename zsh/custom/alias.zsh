@@ -20,6 +20,7 @@ alias tat="tmux a -t"
 
 # Mercurial.
 alias hgs="hg status"
+alias hgp="hg push default"
 
 # Vagrant.
 alias vg="vagrant"
