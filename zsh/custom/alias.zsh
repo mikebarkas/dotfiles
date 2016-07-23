@@ -22,6 +22,9 @@ alias tat="tmux a -t"
 alias hgs="hg status"
 alias hgp="hg push default"
 
+# Python.
+alias off='deactivate'
+
 # Vagrant.
 alias vg="vagrant"
 alias vgu="vagrant up"
