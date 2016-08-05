@@ -23,7 +23,9 @@ alias hgs="hg status"
 alias hgp="hg push default"
 
 # Python.
+alias workoff='deactivate'
 alias off='deactivate'
+alias pyman='python manage.py'
 
 # Vagrant.
 alias vg="vagrant"
