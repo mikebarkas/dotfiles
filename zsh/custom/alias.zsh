@@ -26,6 +26,12 @@ alias hgp="hg push default"
 alias workoff='deactivate'
 alias off='deactivate'
 alias pyman='python manage.py'
+alias hk='heroku'
+
+# Postgres.
+alias pg_start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pg_stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+alias pg_status='pg_ctl -D /usr/local/var/postgres status'
 
 # Vagrant.
 alias vg="vagrant"
@@ -46,9 +52,6 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 
 # Drupal.
 alias dcs="phpcs --standard=Drupal,DrupalPractice --extensions='php,module,inc,install,test,profile,theme,js,css,info,txt' --ignore='*.features.*.inc'"
-
-# Meteor.
-alias v0m="VELOCITY=0 meteor"
 
 #
 # Config LESS output.
