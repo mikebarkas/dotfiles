@@ -9,6 +9,15 @@
 # Mail Accounts
 # ==============================================================================
 # /path/to/account/conf
+#folder-hook x/*        source ~/.mutt/accounts/x
+set folder      = imaps://imap.gmail.com/
+set imap_user   =
+set imap_pass   =
+#set spoolfile   = +INBOX
+mailboxes       = +INBOX +SENT
+set spoolfile = "+INBOX"
+set postponed = "+Drafts"
+set record    = "+SENT"
 
 
 # ==============================================================================
@@ -17,18 +26,46 @@
 set move = no
 set mail_check = 30
 set sort = reverse-date-received
+unset move # gmail does that
 
 
 # ==============================================================================
-# Cache
+# Paths
 # ==============================================================================
+#set folder = ~/.mail
 set header_cache = ~/.mutt/cache/headers
 set message_cachedir = ~/.mutt/cache/bodies
-
+set certificate_file = ~/.mutt/cerficates
+set tmpdir = ~/.mutt/temp
+set signature = ~/.mutt/sig
 
 # ==============================================================================
 # Color
 # ==============================================================================
+#source ~/.mutt/themes/colors.muttrc
 color status black color144
 color normal white default
 color index black yellow "~N"
+
+
+# ==============================================================================
+# Sidebar
+# ==============================================================================
+set sidebar_width=25
+set sidebar_visible=yes
+set sidebar_delim='|'
+set sidebar_sort=no
+color sidebar_new  yellow default
+
+# ctrl-n, ctrl-p to select next, prev folder
+# # ctrl-o to open selected folder
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
+macro index,pager B '<enter-command>toggle sidebar_visible<enter>'
+# Mailboxes to show in the sidebar.
+#mailboxes "+-- x ---------------" \
+#          +x/INBOX \
+#          +x/archive \
+#          +x/Drafts \
+#          +x/Sent\ Messages \
