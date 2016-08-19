@@ -20,6 +20,7 @@ Plugin 'gmarik/Vundle.vim'             " Required Vundle managment.
 "
 " Plugins
 "
+Plugin 'hdima/python-syntax'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Bling/vim-airline'
