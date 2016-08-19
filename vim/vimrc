@@ -185,6 +185,8 @@ set omnifunc=syntaxcomplete#Complete
 " ==============================================================================
 " Syntax
 " ==============================================================================
+let python_highlight_all = 1
+
 " Drupal filetypes and syntax.
 augroup module
   autocmd BufRead,BufNewFile *.module set filetype=php
