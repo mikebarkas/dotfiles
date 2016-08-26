@@ -21,6 +21,7 @@ alias tat="tmux a -t"
 # Mercurial.
 alias hgs="hg status"
 alias hgp="hg push default"
+alias hgl='hg log -G'
 
 # Python.
 alias workoff='deactivate'
