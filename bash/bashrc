@@ -14,7 +14,7 @@ alias ...='cd ../..'
 #
 # Define prompt.
 #
-export PS1="\[\e[32m\]\w\[\e[m\]\n "
+export PS1="\[\e[38;5;222m\]\w\[\e[m\]\n "
 
 if [[ $OSTYPE == 'darwin*' ]]; then
   export LSCOLORS=gxCxexdxHxcxcxbxbxGxGx
