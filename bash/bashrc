@@ -1,10 +1,28 @@
 #
-# Define prompt
+# Alias.
+#
+
+# System.
+alias l='ls -lGFhi'
+alias ll='ls -AlGFhi'
+alias lll='ls -AlGFhi | less'
+alias lt='ls -A1t'
+alias ..='cd ..'
+alias ...='cd ../..'
+
+
+#
+# Define prompt.
 #
 export PS1="\[\e[32m\]\w\[\e[m\]\n "
 
-export LSCOLORS=gxCxexdxHxcxcxbxbxGxGx
+if [[ $OSTYPE == 'darwin*' ]]; then
+  export LSCOLORS=gxCxexdxHxcxcxbxbxGxGx
+fi
+
 #export LS_COLORS=di=36:ln=1;32:so=34:pi=33:ex=1;37:bd=32:cd=32:su=31:sg=31:tw=1;36:ow=1;36
 
-alias l='ls -lGFhi'
-alias ll='ls -AlGFhi'
+#
+# Config LESS output.
+#
+export LESS=-iXFR
