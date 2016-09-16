@@ -43,6 +43,11 @@ alias vgrp="vagrant reload --provision"
 alias vgd="vagrant destroy"
 alias vgbl="vagrant box list"
 
+#
+# Docker. iterm start issue.
+#
+alias start-docker="source /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh"
+
 # Mac.
 # Show/hide hidden files.
 alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
