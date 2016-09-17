@@ -1,0 +1,33 @@
+# Define color.
+BLUE='\[\e[38;5;110m\]'
+YELLOW='\[\e[38;5;179m\]'
+GREEN='\[\e[38;5;84m\]'
+RESET="\[\e[0m\]"
+
+
+source $HOME/.dotfiles/bash/alias.sh
+source $HOME/.dotfiles/bash/functions.sh
+
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+
+
+export LSCOLORS=gxCxexdxHxcxcxbxbxGxGx
+#export LS_COLORS=di=36:ln=1;32:so=34:pi=33:ex=1;37:bd=32:cd=32:su=31:sg=31:tw=1;36:ow=1;36
+
+#
+# Config LESS output.
+#
+export LESS=-iXFR
+
+#
+# Define prompt.
+#
+function set_prompt() {
+  set_virtualenv
+  PS1="${VIRTUALENV} ${YELLOW}\w ${GREEN}\$(git_branch)${RESET} \n • "
+}
+
+PROMPT_COMMAND=set_prompt
