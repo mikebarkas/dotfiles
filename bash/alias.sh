@@ -41,6 +41,11 @@ alias gs='git status -sb'
 alias gcount='git shortlog -sn'
 alias gd='git diff'
 
+alias gl='git log --oneline --graph --decorate -12'
+alias gll='git log --pretty=format:"%C(green)[%h]%Creset %gd %s %C(yellow)(%cr)%Creset %C(cyan)%cn%Creset" --graph'
+alias gls='git log --oneline --graph --decorate --stat'
+alias glp='git shortlog'
+
 
 # Mercurial.
 alias hgs="hg status"
