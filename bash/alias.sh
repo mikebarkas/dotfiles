@@ -58,3 +58,24 @@ alias workoff='deactivate'
 alias off='deactivate'
 alias pyman='python manage.py'
 alias hk='heroku'
+
+
+# Postgres.
+alias pg_start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pg_stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+alias pg_status='pg_ctl -D /usr/local/var/postgres status'
+
+
+# Vagrant.
+alias vg="vagrant"
+alias vgu="vagrant up"
+alias vgs="vagrant ssh"
+alias vgh="vagrant halt"
+alias vgrp="vagrant reload --provision"
+alias vgd="vagrant destroy"
+alias vgbl="vagrant box list"
+
+#
+# Docker. iterm Quick start issue.
+#
+alias start-docker="source /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh"
