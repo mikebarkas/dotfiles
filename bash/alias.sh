@@ -36,9 +36,9 @@ alias gr='git remote -v'
 
 alias gc='git commit -v'
 alias gcmsg='git commit -m'
+alias gp='git push'
 
 alias gs='git status -sb'
-alias gcount='git shortlog -sn'
 alias gd='git diff'
 
 alias gl='git log --oneline --graph --decorate -12'
