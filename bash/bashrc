@@ -1,4 +1,5 @@
-source ~/.dotfiles/bash/alias.sh
+source $HOME/.dotfiles/bash/alias.sh
+source $HOME/.dotfiles/bash/functions.sh
 
 
 BLUE='\[\e[38;5;110m\]'
@@ -10,21 +11,20 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
 
-parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
-}
 
-git_branch() {
-  git rev-parse --abbrev-ref HEAD 2> /dev/null
-}
 
-function set_virtualenv () {
-  if test -z "$VIRTUAL_ENV" ; then
-      VIRTUALENV=""
-  else
-      VIRTUALENV="${BLUE}[`basename \"$VIRTUAL_ENV\"`]${COLOR_NONE}"
-  fi
-}
+#export PS1="\$(virtualenv) \[\e[38;5;222m\]\w\[\e[m\] \[\e[38;5;84m\]\$(git_branch) \[\e[m\]\n • "
+
+#if [[ $OSTYPE == 'darwin*' ]]; then
+  export LSCOLORS=gxCxexdxHxcxcxbxbxGxGx
+#fi
+
+#export LS_COLORS=di=36:ln=1;32:so=34:pi=33:ex=1;37:bd=32:cd=32:su=31:sg=31:tw=1;36:ow=1;36
+
+#
+# Config LESS output.
+#
+export LESS=-iXFR
 
 #
 # Define prompt.
@@ -35,16 +35,3 @@ function set_prompt() {
 }
 
 PROMPT_COMMAND=set_prompt
-
-#export PS1="\$(virtualenv) \[\e[38;5;222m\]\w\[\e[m\] \[\e[38;5;84m\]\$(git_branch) \[\e[m\]\n • "
-
-if [[ $OSTYPE == 'darwin*' ]]; then
-  export LSCOLORS=gxCxexdxHxcxcxbxbxGxGx
-fi
-
-#export LS_COLORS=di=36:ln=1;32:so=34:pi=33:ex=1;37:bd=32:cd=32:su=31:sg=31:tw=1;36:ow=1;36
-
-#
-# Config LESS output.
-#
-export LESS=-iXFR
