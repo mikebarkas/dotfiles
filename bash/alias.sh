@@ -40,3 +40,10 @@ alias gcmsg='git commit -m'
 alias gs='git status -sb'
 alias gcount='git shortlog -sn'
 alias gd='git diff'
+
+
+# Mercurial.
+alias hgs="hg status"
+alias hgp="hg push default"
+alias hgl='hg log -G'
+
