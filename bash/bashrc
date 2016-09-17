@@ -11,10 +11,19 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
+}
+
+git_branch() {
+  git rev-parse --abbrev-ref HEAD 2> /dev/null
+}
+
+
 #
 # Define prompt.
 #
-export PS1="\[\e[38;5;222m\]\w\[\e[m\]\n "
+export PS1="\[\e[38;5;222m\]\w\[\e[m\] \[\e[38;5;84m\]\$(git_branch) \[\e[m\]\n • "
 
 if [[ $OSTYPE == 'darwin*' ]]; then
   export LSCOLORS=gxCxexdxHxcxcxbxbxGxGx
