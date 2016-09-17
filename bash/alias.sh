@@ -52,3 +52,9 @@ alias hgs="hg status"
 alias hgp="hg push default"
 alias hgl='hg log -G'
 
+
+# Python.
+alias workoff='deactivate'
+alias off='deactivate'
+alias pyman='python manage.py'
+alias hk='heroku'
