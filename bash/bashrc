@@ -1,15 +1,14 @@
-#
-# Alias.
-#
+source ~/.dotfiles/bash/alias.sh
 
-# System.
-alias l='ls -lGFhi'
-alias ll='ls -AlGFhi'
-alias lll='ls -AlGFhi | less'
-alias lt='ls -A1t'
-alias ..='cd ..'
-alias ...='cd ../..'
 
+BLUE='\[\e[38;5;110m\]'
+YELLOW='\[\e[38;5;179m\]'
+GREEN='\[\e[38;5;84m\]'
+RESET="\[\e[0m\]"
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
 
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
@@ -19,11 +18,25 @@ git_branch() {
   git rev-parse --abbrev-ref HEAD 2> /dev/null
 }
 
+function set_virtualenv () {
+  if test -z "$VIRTUAL_ENV" ; then
+      VIRTUALENV=""
+  else
+      VIRTUALENV="${BLUE}[`basename \"$VIRTUAL_ENV\"`]${COLOR_NONE}"
+  fi
+}
 
 #
 # Define prompt.
 #
-export PS1="\[\e[38;5;222m\]\w\[\e[m\] \[\e[38;5;84m\]\$(git_branch) \[\e[m\]\n • "
+function set_prompt() {
+  set_virtualenv
+  PS1="${VIRTUALENV} ${YELLOW}\w ${GREEN}\$(git_branch)${RESET} \n • "
+}
+
+PROMPT_COMMAND=set_prompt
+
+#export PS1="\$(virtualenv) \[\e[38;5;222m\]\w\[\e[m\] \[\e[38;5;84m\]\$(git_branch) \[\e[m\]\n • "
 
 if [[ $OSTYPE == 'darwin*' ]]; then
   export LSCOLORS=gxCxexdxHxcxcxbxbxGxGx
