@@ -9,8 +9,13 @@ source $HOME/.dotfiles/bash/alias.sh
 source $HOME/.dotfiles/bash/functions.sh
 
 
+#
+# Virtualenvwrapper configuration.
+#
+export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.5/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/Library/Frameworks/Python.framework/Versions/3.5/bin/virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
+export PROJECT_HOME=$HOME/dev/python
 source /usr/local/bin/virtualenvwrapper.sh
 
 
