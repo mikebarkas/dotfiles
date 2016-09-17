@@ -18,6 +18,11 @@ alias v.="vim ."
 alias v,="vim ."
 
 
+# Tmux.
+alias tls="tmux ls"
+alias tat="tmux a -t"
+
+
 # Git.
 alias g='git'
 alias ga='git add'
