@@ -1,6 +1,6 @@
-#
+# ------------------------------------
 # Alias.
-#
+# ------------------------------------
 
 # System.
 alias l='ls -lGFhi'
@@ -9,6 +9,14 @@ alias lll='ls -AlGFhi | less'
 alias lt='ls -A1t'
 alias ..='cd ..'
 alias ...='cd ../..'
+
+
+# Vim.
+alias sv="sudo vim"
+alias v="vim"
+alias v.="vim ."
+alias v,="vim ."
+
 
 # Git.
 alias g='git'
