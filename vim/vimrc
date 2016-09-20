@@ -183,7 +183,7 @@ set omnifunc=syntaxcomplete#Complete
 
 
 " ==============================================================================
-" Syntax
+" File types.
 " ==============================================================================
 
 " Python.
@@ -212,6 +212,15 @@ augroup html
   autocmd BufRead,BufNewFile *.twig set syntax=html
 augroup END
 
+" Text and markdown.
+augroup text
+  autocmd!
+  "syn spell toplevel
+  autocmd BufRead,BufNewFile *.md,*.txt,*.rst setlocal spell spelllang=en_us
+  autocmd BufRead,BufNewFile *.md,*.txt,*.rst set wrap linebreak nolist
+  autocmd BufRead,BufNewFile *.md,*.txt,*.rst set textwidth=79
+  autocmd BufRead,BufNewFile *.md,*.txt,*.rst set fo+=t
+augroup END
 
 " ==============================================================================
 " Folding
