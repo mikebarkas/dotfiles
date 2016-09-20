@@ -216,10 +216,10 @@ augroup END
 augroup text
   autocmd!
   "syn spell toplevel
-  autocmd BufRead,BufNewFile *.md,*.txt,*.rst setlocal spell spelllang=en_us
-  autocmd BufRead,BufNewFile *.md,*.txt,*.rst set wrap linebreak nolist
-  autocmd BufRead,BufNewFile *.md,*.txt,*.rst set textwidth=79
-  autocmd BufRead,BufNewFile *.md,*.txt,*.rst set fo+=t
+  autocmd BufRead,BufNewFile *.md,*.rst setlocal spell spelllang=en_us
+  autocmd BufRead,BufNewFile *.md,*.rst set wrap linebreak nolist
+  autocmd BufRead,BufNewFile *.md,*.rst set textwidth=79
+  autocmd BufRead,BufNewFile *.md,*.rst set fo+=t
 augroup END
 
 " ==============================================================================
