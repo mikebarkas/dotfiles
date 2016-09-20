@@ -104,7 +104,8 @@ let g:netrw_list_hide='.DS_Store, *.pyc'
 " ==============================================================================
 " Binds
 " ==============================================================================
-let mapleader = "\<Space>"             " Reassign leader.
+let mapleader = ','
+let maplocalleader = ','
 
 " Saving and quitting.
 imap jj <Esc>
