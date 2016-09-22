@@ -108,41 +108,41 @@ let mapleader = ','
 let maplocalleader = ','
 
 " Saving and quitting.
-imap jj <Esc>
-imap kj <Esc>:w<Cr>
-nmap <leader>q :q<Cr>
-nmap <leader>d :bd<Cr>
-nmap <leader>s :w<Cr>
+inoremap jj <Esc>
+inoremap kj <Esc>:w<Cr>
+nnoremap <leader>q :q<Cr>
+nnoremap <leader>d :bd<Cr>
+nnoremap <leader>s :w<Cr>
 
-nmap <S-u> :redo<Cr>
-nmap <leader>tt :Tagbar<Cr>
-nmap <silent> <leader>p :set paste!<Cr>
-nmap <silent> <leader>` :b#<Cr>
-nmap <leader>ev :e ~/.dotfiles/vim/vimrc
+nnoremap <S-u> :redo<Cr>
+nnoremap <leader>tt :Tagbar<Cr>
+nnoremap <silent> <leader>p :set paste!<Cr>
+nnoremap <silent> <leader>` :b#<Cr>
+nnoremap <leader>ev :e ~/.dotfiles/vim/vimrc
 
 " Windows.
-nmap <silent> <leader>h :wincmd h<Cr>
-nmap <silent> <leader>j :wincmd j<Cr>
-nmap <silent> <leader>k :wincmd k<Cr>
-nmap <silent> <leader>l :wincmd l<Cr>
+nnoremap <silent> <leader>h :wincmd h<Cr>
+nnoremap <silent> <leader>j :wincmd j<Cr>
+nnoremap <silent> <leader>k :wincmd k<Cr>
+nnoremap <silent> <leader>l :wincmd l<Cr>
 
-nmap <leader><S-h> :wincmd <S-h><Cr>
-nmap <leader><S-j> :wincmd <S-j><Cr>
-nmap <leader><S-k> :wincmd <S-k><Cr>
-nmap <leader><S-l> :wincmd <S-l><Cr>
+nnoremap <leader><S-h> :wincmd <S-h><Cr>
+nnoremap <leader><S-j> :wincmd <S-j><Cr>
+nnoremap <leader><S-k> :wincmd <S-k><Cr>
+nnoremap <leader><S-l> :wincmd <S-l><Cr>
 
 " Gits.
-nmap <leader>fw :Gwrite<Cr>
-nmap <leader>fc :Gcommit
-nmap <leader>fr :Gread
-nmap <leader>fm :Gmove
-nmap <leader>fs :Gstatus
-nmap <leader>fb  :w<Bar>bd
+nnoremap <leader>fw :Gwrite<Cr>
+nnoremap <leader>fc :Gcommit
+nnoremap <leader>fr :Gread
+nnoremap <leader>fm :Gmove
+nnoremap <leader>fs :Gstatus
+nnoremap <leader>fb  :w<Bar>bd
 
 " Omni Complete.
-imap <leader>cc <C-x><C-o>
-imap <leader>cf <C-x><C-f>
-imap <leader>cn <C-n>
+inoremap <leader>cc <C-x><C-o>
+inoremap <leader>cf <C-x><C-f>
+inoremap <leader>cn <C-n>
 
 " Search.
 nnoremap n nzzzv
@@ -153,7 +153,7 @@ nnoremap <silent> <CR> :noh<CR><CR>
 nnoremap <leader>z zMzvzz
 
 " Diff file and buffer.
-nmap <leader>df :w !diff % -<Cr>
+"nmap <leader>df :w !diff % -<Cr>
 
 
 " ==============================================================================
