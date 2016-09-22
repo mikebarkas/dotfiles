@@ -6,8 +6,8 @@ If existing file found, create a backup of the file and symlinks a new configrat
 
 #### Usage
 
-Run this _init.sh_ script.<br/>
-`setup/./init.sh`
+Run this _setup.py_ script.<br/>
+`python setup.py`
 
 #### Result Example
 
