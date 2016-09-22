@@ -76,6 +76,7 @@ alias vgd="vagrant destroy"
 alias vgbl="vagrant box list"
 
 #
-# Docker. iterm Quick start issue.
+# Docker.
 #
-alias start-docker="source /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh"
+#alias start-docker="source /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh"
+alias dc='docker-compose'
