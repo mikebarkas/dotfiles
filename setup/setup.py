@@ -12,6 +12,7 @@ class color:
     end = '\033[00m'
 
 dotfiles = [
+    ('bash', '.bash_profile'),
     ('git',  '.gitconfig'),
     ('git',  '.gitignore_global'),
     ('hg',   '.hgrc'),
