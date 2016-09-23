@@ -80,3 +80,4 @@ alias vgbl="vagrant box list"
 #
 #alias start-docker="source /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh"
 alias dc='docker-compose'
+alias dm='docker-machine'
