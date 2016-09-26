@@ -26,6 +26,7 @@ alias tat="tmux a -t"
 # Git.
 alias g='git'
 alias ga='git add'
+alias gap='git add -p'
 
 alias gco='git checkout'
 alias gcm='git checkout master'
