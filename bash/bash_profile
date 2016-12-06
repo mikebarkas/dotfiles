@@ -23,6 +23,14 @@ export LSCOLORS=gxCxexdxHxcxcxbxbxGxGx
 #export LS_COLORS=di=36:ln=1;32:so=34:pi=33:ex=1;37:bd=32:cd=32:su=31:sg=31:tw=1;36:ow=1;36
 
 #
+# Set path priorities.
+#
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+#export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+
+#
 # Config LESS output.
 #
 export LESS=-iXFR
