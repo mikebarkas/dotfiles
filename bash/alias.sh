@@ -70,8 +70,10 @@ alias pg_status='pg_ctl -D /usr/local/var/postgres status'
 # Vagrant.
 alias vg="vagrant"
 alias vgu="vagrant up"
-alias vgs="vagrant ssh"
+alias vgs="vagrant status"
+alias vgss="vagrant ssh"
 alias vgh="vagrant halt"
+alias vgp="vagrant provision"
 alias vgrp="vagrant reload --provision"
 alias vgd="vagrant destroy"
 alias vgbl="vagrant box list"
