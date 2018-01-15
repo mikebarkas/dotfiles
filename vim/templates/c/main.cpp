@@ -1,5 +1,6 @@
-#include <cstdio>
+#include <iostream>
 
+// Namespace for experimenting.
 using namespace std;
 
 /**
