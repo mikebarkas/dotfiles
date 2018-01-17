@@ -16,3 +16,7 @@ git_branch() {
   git rev-parse --abbrev-ref HEAD 2> /dev/null
 }
 
+# cUrl for IP info.
+ipinfo() {
+  curl https://ipinfo.io/$1
+}
