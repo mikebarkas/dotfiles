@@ -176,6 +176,7 @@ coverage.xml
 *.pot
 *.log
 local_settings.py
+.pylintrc
 
 # Flask
 instance/
