@@ -256,6 +256,13 @@ autocmd BufRead COMMIT_EDITMSG setlocal spell spelllang=en_us
 
 
 " ==============================================================================
+" Syntax
+" ==============================================================================
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+
+
+" ==============================================================================
 " Tags
 " ==============================================================================
 let g:tagbar_phpctags_bin='~/.dotfiles/vim/tags/phpctags'
