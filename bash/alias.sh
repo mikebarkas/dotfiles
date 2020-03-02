@@ -42,7 +42,8 @@ alias gp='git push'
 alias gs='git status -sb'
 alias gd='git diff'
 
-alias gl='git log --oneline --graph --decorate -12'
+alias gl='git log --oneline -6'
+alias glg='git log --oneline --graph --decorate -12'
 alias gll='git log --pretty=format:"%C(green)[%h]%Creset %gd %s %C(yellow)(%cr)%Creset %C(cyan)%cn%Creset" --graph'
 alias gls='git log --oneline --graph --decorate --stat'
 alias glp='git shortlog'
@@ -61,22 +62,9 @@ alias pyman='python manage.py'
 alias hk='heroku'
 
 
-# Postgres.
-alias pg_start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pg_stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
-alias pg_status='pg_ctl -D /usr/local/var/postgres status'
-
-
-# Vagrant.
-alias vg="vagrant"
-alias vgu="vagrant up"
-alias vgs="vagrant status"
-alias vgss="vagrant ssh"
-alias vgh="vagrant halt"
-alias vgp="vagrant provision"
-alias vgrp="vagrant reload --provision"
-alias vgd="vagrant destroy"
-alias vgbl="vagrant box list"
+# Kubernetes.
+alias k='kubectl'
+alias kg='kubectl get'
 
 #
 # Docker.
@@ -84,3 +72,8 @@ alias vgbl="vagrant box list"
 #alias start-docker="source /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh"
 alias dc='docker-compose'
 alias dm='docker-machine'
+
+#
+# Ctags
+#
+alias ctags_python='ctags --fields=+l --languages=python --python-kinds=-iv -f ./tags '$(python -c "import os, sys; print(' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)))")
