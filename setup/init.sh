@@ -72,16 +72,6 @@ fi
 ln -s -v ~/.dotfiles/hg/hgrc ~/.hgrc
 print_message "hgrc file successfully linked to dotfiles."
 
-# -------------------------------------
-# Zsh.
-# -------------------------------------
-print_message "Checking for existing Zsh file..."
-if [ -f ~/.zshrc ]; then
-  print_warning "Zshrc file found. Creating a backup."
-  mv ~/.zshrc ~/.zshrc-original
-fi
-ln -s -v ~/.dotfiles/zsh/zshrc ~/.zshrc
-print_message "Zshrc file successfully linked to dotfiles."
 
 #
 # Mutt.

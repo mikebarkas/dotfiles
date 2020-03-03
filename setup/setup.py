@@ -12,15 +12,15 @@ class color:
     end = '\033[00m'
 
 dotfiles = [
-    ('bash', '.bash_profile'),
-    ('git',  '.gitconfig'),
-    ('git',  '.gitignore_global'),
-    ('hg',   '.hgrc'),
-    ('mutt', '.muttrc'),
-    ('npm',  '.npmrc'),
-    ('tmux', '.tmux.conf'),
-    ('vim',  '.vimrc'),
-    ('zsh',  '.zshrc'),
+    ('bash',  '.bash_profile'),
+    ('ctags', '.ctags'),
+    ('git',   '.gitconfig'),
+    ('git',   '.gitignore_global'),
+    ('hg',    '.hgrc'),
+    ('mutt',  '.muttrc'),
+    ('npm',   '.npmrc'),
+    ('tmux',  '.tmux.conf'),
+    ('vim',   '.vimrc'),
 ]
 
 home_directory = os.path.expanduser('~')
@@ -41,6 +41,4 @@ for directory, dotfile in dotfiles:
 
     print 'Symlinking ' + color.green + dotfile + color.end + ' in home directory..'
     os.symlink(home_directory + '/.dotfiles/' + directory + '/' + dotfile[1:], dotfile)
-
-    print ''
 
