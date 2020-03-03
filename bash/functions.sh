@@ -13,7 +13,7 @@ show_path() {
 }
 
 # Make new directory and cd into it.
-mkd() {
+mkcd() {
   mkdir -p "$@" && cd "$@"
 }
 
@@ -24,13 +24,13 @@ tre() {
 }
 
 # Json  can use with argument or in a pipe
-json() {
-	if [ -t 0 ]; then
-		python -mjson.tool <<< "$*" | pygmentize -l javascript
-	else
-		python -mjson.tool | pygmentize -l javascript
-	fi
-}
+#json() {
+#	if [ -t 0 ]; then
+#		python -mjson.tool <<< "$*" | pygmentize -l javascript
+#	else
+#		python -mjson.tool | pygmentize -l javascript
+#	fi
+#}
 
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
