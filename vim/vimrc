@@ -27,7 +27,7 @@ Plugin 'Bling/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'StanAngeloff/php.vim'
-Plugin 'cakebaker/scss-syntax.vim'
+"Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'elzr/vim-json'
 Plugin 'pangloss/vim-javascript'
 Bundle 'joonty/vdebug.git'
@@ -54,7 +54,8 @@ filetype plugin indent on
 " ==============================================================================
 set t_Co=256                           " Set terminal color to 256.
 syntax on                              " Syntax highlighting.
-set number                             " Line numbering.
+set relativenumber                     " Line numbering.
+set number
 set virtualedit=all                    " Allow virtual editing.
 set title                              " Set title.
 set visualbell                         " Disable beep.
@@ -139,11 +140,6 @@ nnoremap <leader>fm :Gmove
 nnoremap <leader>fs :Gstatus
 nnoremap <leader>fb  :w<Bar>bd
 
-" Omni Complete.
-inoremap <leader>cc <C-x><C-o>
-inoremap <leader>cf <C-x><C-f>
-inoremap <leader>cn <C-n>
-
 " Search.
 nnoremap n nzzzv
 nnoremap N nzzzv
@@ -179,7 +175,7 @@ end
 " ==============================================================================
 " Auto complete.
 " ==============================================================================
-set complete=.,w,b,t                   " Completion location priority.
+set complete=.,w,b,t,i                   " Completion location priority.
 set omnifunc=syntaxcomplete#Complete
 
 
