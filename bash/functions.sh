@@ -7,6 +7,31 @@ function set_virtualenv() {
   fi
 }
 
+# Show path env variable in a vertical list.
+show_path() {
+  echo $PATH |tr ':' '\n'
+}
+
+# Make new directory and cd into it.
+mkcd() {
+  mkdir -p "$@" && cd "$@"
+}
+
+# Better tree
+# Hiding .git and directories are first piped into less.
+tre() {
+	tree -aC -I '.git' --dirsfirst "$@" | less -FRNX
+}
+
+# Json  can use with argument or in a pipe
+#json() {
+#	if [ -t 0 ]; then
+#		python -mjson.tool <<< "$*" | pygmentize -l javascript
+#	else
+#		python -mjson.tool | pygmentize -l javascript
+#	fi
+#}
+
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
 }
