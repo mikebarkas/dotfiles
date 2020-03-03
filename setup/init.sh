@@ -72,7 +72,6 @@ fi
 ln -s -v ~/.dotfiles/hg/hgrc ~/.hgrc
 print_message "hgrc file successfully linked to dotfiles."
 
-
 #
 # Mutt.
 #
