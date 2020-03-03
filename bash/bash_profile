@@ -1,46 +1,21 @@
-# Define color.
-BLUE='\[\e[38;5;110m\]'
-YELLOW='\[\e[38;5;179m\]'
-GREEN='\[\e[38;5;84m\]'
-RESET="\[\e[0m\]"
-
-
-source $HOME/.dotfiles/bash/alias.sh
-source $HOME/.dotfiles/bash/functions.sh
-
-
+if [[ -r "${HOME}/.bashrc" ]]; then
+	source "${HOME}/.bashrc"
+fi
 #
 # Virtualenvwrapper configuration.
 #
-export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.5/bin/python3
-export VIRTUALENVWRAPPER_VIRTUALENV=/Library/Frameworks/Python.framework/Versions/3.5/bin/virtualenv
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/dev/python
-source /usr/local/bin/virtualenvwrapper.sh
+#export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.5/bin/python3
+#export VIRTUALENVWRAPPER_VIRTUALENV=/Library/Frameworks/Python.framework/Versions/3.5/bin/virtualenv
+#export WORKON_HOME=$HOME/.virtualenvs
+#export PROJECT_HOME=$HOME/dev/python
+#source /usr/local/bin/virtualenvwrapper.sh
 
 
-export LSCOLORS=gxCxexdxHxcxcxbxbxGxGx
-#export LS_COLORS=di=36:ln=1;32:so=34:pi=33:ex=1;37:bd=32:cd=32:su=31:sg=31:tw=1;36:ow=1;36
 
 #
 # Set path priorities.
 #
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+#export PATH=$HOME/bin:/usr/local/bin:$PATH
 #export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
-export PATH="$HOME/.composer/vendor/bin:$PATH"
+#export PATH="$HOME/.composer/vendor/bin:$PATH"
 
-
-#
-# Config LESS output.
-#
-export LESS=-iXFR
-
-#
-# Define prompt.
-#
-function set_prompt() {
-  set_virtualenv
-  PS1="${VIRTUALENV} ${YELLOW}\w ${GREEN}\$(git_branch)${RESET} \n • "
-}
-
-PROMPT_COMMAND=set_prompt
