@@ -113,7 +113,7 @@ inoremap jj <Esc>
 inoremap kj <Esc>:w<Cr>
 nnoremap <leader>q :q<Cr>
 nnoremap <leader>d :bd<Cr>
-nnoremap <leader>s :!w<Cr>
+nnoremap <leader>s :w!<Cr>
 
 nnoremap <S-u> :redo<Cr>
 nnoremap <leader>tt :Tagbar<Cr>
