@@ -50,9 +50,9 @@ alias glp='git shortlog'
 
 
 # Mercurial.
-alias hgs="hg status"
-alias hgp="hg push default"
-alias hgl='hg log -G'
+#alias hgs="hg status"
+#alias hgp="hg push default"
+#alias hgl='hg log -G'
 
 
 # Python.
@@ -72,6 +72,14 @@ alias kg='kubectl get'
 #alias start-docker="source /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh"
 alias dc='docker-compose'
 alias dm='docker-machine'
+
+#
+# DDEV
+#
+alias ddd='ddev drush'
+alias ddc='ddev composer'
+
+alias dcs='phpcs --standard=Drupal,DrupalPractice --extensions='\''php,module,inc,install,test,profile,theme,js,css,info,txt'\'' --ignore='\''*.features.*.inc'\'''
 
 #
 # Ctags
