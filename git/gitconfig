@@ -1,6 +1,6 @@
 [user]
   name = Mike Barkas
-  email = mike@barkas.com
+  email = mike.barkas@mediacurrent.com
 
 [core]
   excludesfile = ~/.gitignore_global
@@ -31,7 +31,7 @@
   lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit
 
   # Checkout Stash pull requests.
-  spr = !sh -c \"git fetch development pull-requests/${1}/from:pr/${1} && git checkout pr/${1}\" -
+  #spr = !sh -c \"git fetch development pull-requests/${1}/from:pr/${1} && git checkout pr/${1}\" -
 
   # Checkout Github pull requests for origin and upstream remotes.
   gpr-origin = !sh -c \"git fetch origin pull/${1}/head:pr/${1} && git checkout pr/${1}\" -

@@ -49,7 +49,7 @@ export LESS=-iXFR
 #
 function set_prompt() {
   set_virtualenv
-  PS1="${VIRTUALENV} ${YELLOW}\w ${GREEN}\$(git_branch)${RESET} \n • "
+  PS1="${VIRTUALENV} ${YELLOW}\w ${GREEN}\$(git_branch)${RESET} \n > "
 }
 
 PROMPT_COMMAND=set_prompt

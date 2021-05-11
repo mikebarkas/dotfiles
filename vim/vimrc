@@ -30,18 +30,18 @@ Plugin 'StanAngeloff/php.vim'
 "Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'elzr/vim-json'
 Plugin 'pangloss/vim-javascript'
-Bundle 'joonty/vdebug.git'
+"Bundle 'joonty/vdebug.git'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-php/tagbar-phpctags.vim'
-Plugin 'rust-lang/rust.vim'
+"Plugin 'rust-lang/rust.vim'
 Bundle 'cespare/vim-toml'
 "Plugin 'mileszs/ack.vim'
 " SnipMate
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
+"Plugin 'MarcWeber/vim-addon-mw-utils'
+"Plugin 'tomtom/tlib_vim'
+"Plugin 'garbas/vim-snipmate'
 " Drupal
-Plugin 'git://drupalcode.org/project/vimrc.git', {'rtp': 'bundle/vim-plugin-for-drupal/'}
+"Plugin 'git://drupalcode.org/project/vimrc.git', {'rtp': 'bundle/vim-plugin-for-drupal/'}
 
 call vundle#end()                      " End of plugin management list.
 filetype plugin indent on
@@ -247,7 +247,7 @@ colorscheme xaptao
 " ==============================================================================
 " Git
 " ==============================================================================
-set diffopt+=vertical
+" set diffopt+=vertical
 autocmd BufRead COMMIT_EDITMSG setlocal spell spelllang=en_us
 
 
