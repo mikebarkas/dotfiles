@@ -31,13 +31,15 @@ alias gap='git add -p'
 alias gco='git checkout'
 alias gcm='git checkout master'
 
-alias gb='git branch -vv'
+alias gb='git branch'
+alias gbv='git branch -vv'
 alias gba='git branch -vva'
 alias gr='git remote -v'
 
 alias gc='git commit -v'
 alias gcmsg='git commit -m'
 alias gp='git push'
+alias gcp='git cherry-pick'
 
 alias gs='git status -sb'
 alias gd='git diff'
@@ -79,6 +81,10 @@ alias dm='docker-machine'
 alias ddd='ddev drush'
 alias ddc='ddev composer'
 
+#
+# Terminus
+#
+alias t="terminus"
 alias dcs='phpcs --standard=Drupal,DrupalPractice --extensions='\''php,module,inc,install,test,profile,theme,js,css,info,txt'\'' --ignore='\''*.features.*.inc'\'''
 
 #
