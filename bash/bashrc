@@ -37,7 +37,7 @@ fi
 # History settings.
 #
 export HISTCONTROL=ignorespace:ignoredups:erasedups
-export HISTSIZE=1000
+export HISTSIZE=10000
 
 #
 # Config LESS output.

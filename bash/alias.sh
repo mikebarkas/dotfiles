@@ -30,6 +30,7 @@ alias gap='git add -p'
 
 alias gco='git checkout'
 alias gcm='git checkout master'
+alias gcd='git checkout develop'
 
 alias gb='git branch'
 alias gbv='git branch -vv'
@@ -40,11 +41,13 @@ alias gc='git commit -v'
 alias gcmsg='git commit -m'
 alias gp='git push'
 alias gcp='git cherry-pick'
+alias gpro='git pull --rebase origin'
 
 alias gs='git status -sb'
 alias gd='git diff'
 
-alias gl='git log --oneline -6'
+alias gl='git log --oneline --no-decorate -15'
+alias gld='git log --oneline -15'
 alias glg='git log --oneline --graph --decorate -12'
 alias gll='git log --pretty=format:"%C(green)[%h]%Creset %gd %s %C(yellow)(%cr)%Creset %C(cyan)%cn%Creset" --graph'
 alias gls='git log --oneline --graph --decorate --stat'
@@ -80,11 +83,13 @@ alias dm='docker-machine'
 #
 alias ddd='ddev drush'
 alias ddc='ddev composer'
+alias my-drupal-check='vendor/bin/drupal-check --memory-limit=1g -d'
 
 #
 # Terminus
 #
 alias t="terminus"
+alias trd='terminus remote:drush'
 alias dcs='phpcs --standard=Drupal,DrupalPractice --extensions='\''php,module,inc,install,test,profile,theme,js,css,info,txt'\'' --ignore='\''*.features.*.inc'\'''
 
 #
