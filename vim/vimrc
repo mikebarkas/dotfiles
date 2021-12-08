@@ -63,7 +63,7 @@ set t_vb=                              " Set screen flash to 0.
 set noswapfile                         " Do not create a swapfile.
 set cursorline                         " Display cursor line.
 set mouse=a                            " Mouse availablility.
-set background=dark                    " Set color scope.
+set background=light                    " Set color scope.
 set ch=2
 set backspace=2
 set scrolloff=4                        " Scroll offset.
@@ -240,8 +240,11 @@ autocmd FileType help wincmd L
 " =============================================================================
 " Color Schemes
 " =============================================================================
-colorscheme xaptao
+colorscheme off
+"colorscheme pencil
+"colorscheme xaptao
 "colorscheme jellybeans
+"colorscheme pyte
 
 
 " ==============================================================================
@@ -300,7 +303,7 @@ set statusline+=Line:%l-%L\ Buf:#%n
 " ==============================================================================
 " Airline Statusline
 " ==============================================================================
-let g:airline_theme='xaptao'
+let g:airline_theme='pencil'
 let g:airline_powerline_fonts = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 1
