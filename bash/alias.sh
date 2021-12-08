@@ -41,9 +41,11 @@ alias gc='git commit -v'
 alias gcmsg='git commit -m'
 alias gp='git push'
 alias gcp='git cherry-pick'
-alias gpro='git pull --rebase origin'
+alias gpom='git pull origin master'
+alias gpod='git pull origin develop'
 
 alias gs='git status -sb'
+alias gsi='git status --ignored'
 alias gd='git diff'
 
 alias gl='git log --oneline --no-decorate -15'

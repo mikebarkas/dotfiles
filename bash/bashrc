@@ -4,6 +4,7 @@
 BLUE='\[\e[38;5;110m\]'
 YELLOW='\[\e[38;5;179m\]'
 GREEN='\[\e[38;5;84m\]'
+BLUE='\[\e[1;34m\]'
 RESET="\[\e[0m\]"
 
 #
@@ -49,7 +50,8 @@ export LESS=-iXFR
 #
 function set_prompt() {
   set_virtualenv
-  PS1="${VIRTUALENV} ${YELLOW}\w ${GREEN}\$(git_branch)${RESET} \n > "
+  #PS1="${VIRTUALENV} ${YELLOW}\w ${GREEN}\$(git_branch)${RESET} \n > "
+  PS1="${VIRTUALENV} ${YELLOW}\w ${BLUE}\$(git_branch)${RESET} \n > "
 }
 
 PROMPT_COMMAND=set_prompt
