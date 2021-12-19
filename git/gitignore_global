@@ -65,30 +65,30 @@ Session.vim
 # Drupal.
 # -------------------------------------
 # Files containing sensitive data.
-sites/*/settings*.php
-sites/*/services*.yml
-*/sites/*/settings*.php
+#sites/*/settings*.php
+#sites/*/services*.yml
+#*/sites/*/settings*.php
 
 # Files containing generated content.
-sites/*/files
-sites/*/private
-*/sites/*/files/
-*/sites/*/private/
-drupalforfirebug
-FirePHPCore
+#sites/*/files
+#sites/*/private
+#*/sites/*/files/
+#*/sites/*/private/
+#drupalforfirebug
+#FirePHPCore
 
 # Default text files.
 # robots.txt
-/CHANGELOG.txt
-/COPYRIGHT.txt
-/INSTALL*.txt
-/LICENSE.txt
-/MAINTAINERS.txt
-/UPGRADE.txt
-/README.txt
-sites/all/README.txt
-sites/all/modules/README.txt
-sites/all/themes/README.txt
+#/CHANGELOG.txt
+#/COPYRIGHT.txt
+#/INSTALL*.txt
+#/LICENSE.txt
+#/MAINTAINERS.txt
+#/UPGRADE.txt
+#/README.txt
+#sites/all/README.txt
+#sites/all/modules/README.txt
+#sites/all/themes/README.txt
 
 
 # -------------------------------------
@@ -102,34 +102,33 @@ sites/all/themes/README.txt
 *~
 *.db
 *.orig
-*.DS_Store
 .coverage
 coverage
 .vagrant
 */settings/local.py
 local_settings.py
-public/static/
-public/media/
+#public/static/
+#public/media/
 conf/pillar/*/deploy
 *.priv
-.env
-node_modules
-*/static/js/bundle.js
-*/static/js/vendors.js
-*/static/libs/modernizr.js
-*/static/css
+#.env
+#node_modules
+#*/static/js/bundle.js
+#*/static/js/vendors.js
+#*/static/libs/modernizr.js
+#*/static/css
 __pycache__/
 *.so
 bin/
-build/
+#build/
 develop-eggs/
 dist/
 eggs/
-lib/
+#lib/
 lib64/
 parts/
 sdist/
-var/
+#var/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -146,22 +145,22 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
-build/
+#env/
+#build/
 develop-eggs/
-dist/
+#dist/
 downloads/
 eggs/
 .eggs/
-lib/
+#lib/
 lib64/
 parts/
 sdist/
-var/
+#var/
 *.egg-info/
 .installed.cfg
 *.egg
-*.manifest
+#*.manifest
 *.spec
 pip-log.txt
 # Unit test / coverage reports
@@ -179,7 +178,7 @@ local_settings.py
 .pylintrc
 
 # Flask
-instance/
+#instance/
 .webassets-cache
 
 # Scrapy
@@ -195,7 +194,7 @@ docs/_build/
 celerybeat-schedule
 
 # dotenv
-.env
+#.env
 
 # virtualenv
 venv/
@@ -207,20 +206,20 @@ ENV/
 # -------------------------------------
 # Node.
 # -------------------------------------
-node_modules
+#node_modules
 
 
 # -------------------------------------
 # Meteor.
 # -------------------------------------
-.meteor/local
-.meteor/meteorite
+#.meteor/local
+#.meteor/meteorite
 
 
 # -------------------------------------
 # Sass.
 # -------------------------------------
-config.rb
+#config.rb
 .sass-cache/
 *.css.map
 
@@ -248,7 +247,7 @@ config.rb
 *.dylib
 
 # Fortran module files
-*.mod
+#*.mod
 
 # Compiled Static libraries
 *.lai
@@ -279,6 +278,11 @@ config.rb
 # -------------------------------------
 .idea
 
+# -------------------------------------
+# VS Code.
+# -------------------------------------
+.vscode
+
 
 # -------------------------------------
 # Vagrant.
@@ -289,7 +293,7 @@ config.rb
 # -------------------------------------
 # Composer.
 # -------------------------------------
-vendor/
+#vendor/
 
 
 # -------------------------------------
