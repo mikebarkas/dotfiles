@@ -1,6 +1,6 @@
 [user]
   name = Mike Barkas
-  email = mike@barkas.com
+	email = mikebarkas1@gmail.com
 
 [core]
   excludesfile = ~/.gitignore_global
