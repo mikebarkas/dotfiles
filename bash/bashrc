@@ -13,27 +13,6 @@ RESET="\[\e[0m\]"
 source $HOME/.dotfiles/bash/alias.sh
 source $HOME/.dotfiles/bash/functions.sh
 
-
-#
-# Python virtualenvs.
-#
-export WORKON_HOME=$HOME/.virtualenvs
-#export PROJECT_HOME=$HOME/Devel
-#source /usr/local/bin/virtualenvwrapper.sh
-
-#
-# Set path priorities.
-#
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-#export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
-#
-# Golang paths
-#
-export GOPATH="$HOME/go"
-export PATH="$PATH:$GOPATH/bin"
 #
 # File color.
 #
