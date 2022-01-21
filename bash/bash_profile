@@ -15,7 +15,7 @@ export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
 if [[ -f "/usr/local/etc/bash_completion.d/git" ]]; then
   source "/usr/local/etc/bash_completion.d/git"
   __git_complete gco _git_checkout
-  __git_complete gp _git_pull
+  __git_complete gp _git_push
 else
   echo "Git completion file not found"
 fi
