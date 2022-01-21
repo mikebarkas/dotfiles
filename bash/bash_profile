@@ -8,6 +8,18 @@ fi
 export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
+# Git completion for Bash
+# https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+#
+# Must also define each Git alias
+if [[ -f "/usr/local/etc/bash_completion.d/git" ]]; then
+  source "/usr/local/etc/bash_completion.d/git"
+  __git_complete gco _git_checkout
+  __git_complete gp _git_push
+else
+  echo "Git completion file not found"
+fi
+
 #
 # Not used. For reference and to be deleted.
 #
@@ -39,3 +51,4 @@ MYPATH=$HOME/bin:$GOBIN
 # Set path priorities.
 #
 export PATH=$MYPATH:$SYSPATH
+
