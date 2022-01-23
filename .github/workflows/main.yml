@@ -35,7 +35,8 @@ jobs:
 
     steps:
       - name: message slack
-        run: curl -X POST -H 'Content-type: application/json' \
-              --data '{"text":" ${{ github.event }} "}' \
-             ${{ github.secret.SLACK_WEBHOOK_URL }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data '{"text":" ${{ github.event }} "}' \
+          ${{ github.secret.SLACK_WEBHOOK_URL }}
 
