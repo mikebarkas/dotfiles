@@ -11,5 +11,5 @@ jobs:
           SLACK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           EVENT_CONTEXT: ${{ toJSON(github.event) }}
         run: |
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"${{ github.actor }} - ${{ github.event }} "}' "$SLACK_URL"
+          curl -X POST -H 'Content-type: application/json' --data '{"text":"${{ github.actor }} - ${{ github.ref_name }} "}' "$SLACK_URL"
 
