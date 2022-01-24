@@ -1,7 +1,6 @@
 name: Slack notify
 
 on: [push]
-  workflow_dispatch:
 
 jobs:
   slack_call:
