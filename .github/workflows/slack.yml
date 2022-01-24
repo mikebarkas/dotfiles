@@ -1,0 +1,16 @@
+name: Slack notify
+
+on: [push]
+  workflow_dispatch:
+
+jobs:
+  slack_call:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          SLACK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        env:
+          EVENT_CONTEXT: ${{ toJSON(github.event) }}
+        run: |
+          echo $EVENT_CONTEXT
+
