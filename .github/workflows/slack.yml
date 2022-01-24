@@ -11,6 +11,5 @@ jobs:
           EVENT_CONTEXT: ${{ toJSON(github.event) }}
         run: |
           echo $EVENT_CONTEXT
-        run: |
           curl -X POST -H 'Content-type: application/json' --data '{"text":"Github action"}' "$SLACK_URL"
 
