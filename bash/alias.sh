@@ -29,7 +29,7 @@ alias ga='git add'
 alias gap='git add -p'
 
 alias gco='git checkout'
-alias gcm='git checkout master'
+alias gcm='git checkout main'
 alias gcd='git checkout develop'
 
 alias gb='git branch'
@@ -41,7 +41,7 @@ alias gc='git commit -v'
 alias gcmsg='git commit -m'
 alias gp='git push'
 alias gcp='git cherry-pick'
-alias gpom='git pull origin master'
+alias gpom='git pull origin main'
 alias gpod='git pull origin develop'
 
 alias gs='git status -sb'
@@ -77,6 +77,7 @@ alias kg='kubectl get'
 # Docker.
 #
 #alias start-docker="source /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh"
+alias dk='docker'
 alias dc='docker-compose'
 alias dm='docker-machine'
 
