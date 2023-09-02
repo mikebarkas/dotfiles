@@ -45,10 +45,14 @@ fi
 export GOPATH="$HOME/go"
 export GOBIN="$HOME/go/bin"
 
+FLUTTERPATH="$HOME/bin/flutter/bin"
+BREWPATH="/opt/homebrew/bin"
+RUBYPATH="/opt/homebrew/opt/ruby/bin"
+
 SYSPATH=$PATH
 MYPATH=$HOME/bin:$GOBIN
 #
 # Set path priorities.
 #
-export PATH=$MYPATH:$SYSPATH
+export PATH=$MYPATH:$BREWPATH:$RUBYPATH:$FLUTTERPATH:$SYSPATH
 
