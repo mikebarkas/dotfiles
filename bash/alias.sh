@@ -79,7 +79,8 @@ alias kg='kubectl get'
 #alias start-docker="source /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh"
 alias dk='docker'
 alias dc='docker-compose'
-alias dm='docker-machine'
+alias dki='docker images'
+#alias dm='docker-machine'
 
 #
 # DDEV
