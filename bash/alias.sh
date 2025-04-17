@@ -87,6 +87,8 @@ alias kuc='kubectl config use-context'
 alias dk='docker'
 alias dc='docker-compose'
 alias dki='docker images'
+alias dkih='docker images |head'
+alias dkig='docker images |grep --color=auto'
 
 #
 # DDEV
